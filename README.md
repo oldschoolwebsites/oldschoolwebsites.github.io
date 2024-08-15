@@ -12,5 +12,5 @@ I work with agencies but also directly with Clients.
 
 Bartosz Wais bartoszwais@yahoo.com
 
-![Bartosz Wais cruise on north img ](https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/453258683_2462891887239687_6606305381973839165_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=0dSAJIauG0kQ7kNvgFH3H5J&_nc_ht=scontent-waw2-2.xx&oh=00_AYDdscRCumCNX8EgiPARfw5o_9agAqAnMpiaYTIGpbtlhQ&oe=66C44029
+![Bartosz Wais - my dog img ](https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/453258683_2462891887239687_6606305381973839165_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=0dSAJIauG0kQ7kNvgFH3H5J&_nc_ht=scontent-waw2-2.xx&oh=00_AYDdscRCumCNX8EgiPARfw5o_9agAqAnMpiaYTIGpbtlhQ&oe=66C44029
 )
