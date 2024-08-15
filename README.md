@@ -1,3 +1,5 @@
+![Bartosz Wais - facebook profile img.](https://www.facebook.com/photo/?fbid=1143565555839000&set=a.103303913198508)
+https://www.facebook.com/photo/?fbid=1143565555839000&set=a.103303913198508
 # Oldschool Websites
 ## WEB DESIGN,DEVELOPMENT AND SEO SERVICES
 
