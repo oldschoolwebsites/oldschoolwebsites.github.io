@@ -1,5 +1,6 @@
 <div style="float: left"><img src="http://ompldr.org/vaDU5NQ/scrotter.png"/>
 </div>
+
 ![Bartosz Wais cruise on north img ](https://scontent-waw2-2.xx.fbcdn.net/v/t1.6435-9/69244689_1143565559172333_6243551850335830016_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2a1932&_nc_ohc=WU5eEhAFEecQ7kNvgFQa4WD&_nc_ht=scontent-waw2-2.xx&oh=00_AYC-0ji1YNEDT33i1rEHPm-FXmmrJ2wxUyu9mPlNIKvCmw&oe=66E5AF40)
 ## WEB DESIGN,DEVELOPMENT AND SEO SERVICES
 
