@@ -20,7 +20,7 @@ Bartosz Wais bartoszwais@yahoo.com
   <label>
     Your email:
     <input type="email" name="email">
-  </label">
+  </label>
   <br />
   <label>
     Your message:
