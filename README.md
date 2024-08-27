@@ -11,7 +11,7 @@ I work with agencies but also directly with Clients.
 
 Bartosz Wais bartoszwais@yahoo.com
 
-<div style="width:25rem;float:left;"><img src="https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/453258683_2462891887239687_6606305381973839165_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PKF0zemNX8sQ7kNvgFm5FDu&_nc_ht=scontent-waw2-2.xx&oh=00_AYC1mBFwHodoNpXBJ3GOEh0c7sXbemwtU7wz9jMjM-IEKQ&oe=66CA9F69"/>
+<div style="width:25rem;float:left;"><img src="https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-6/453258683_2462891887239687_6606305381973839165_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=sjMKAoLj4pIQ7kNvgG5OaEw&_nc_ht=scontent-ams2-1.xx&oh=00_AYA9HXJoM9dzjwlyySl9pqBnjEJLIXrRv0rix4udLYYEow&oe=66D3D9E9"/>
 </div>
 
 <!-- modify this form HTML and place wherever you want your form -->
