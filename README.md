@@ -17,7 +17,7 @@ Bartosz Wais bartoszwais@yahoo.com
 
 <div style="float:right;width:14rem;">
 <!-- modify this form HTML and place wherever you want your form -->
-<h2>Contact oldschoolwebsit.es</h2>
+<h2 style="color:crimson;">Contact oldschoolwebsit.es</h2>
 <form action="https://formspree.io/f/mdknbgre" method="POST">
   <label>
     Your email:
