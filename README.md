@@ -13,11 +13,9 @@ Bartosz Wais bartoszwais@yahoo.com
 
 <div style="width:25rem;float:left;"><img src="https://scontent-waw2-2.xx.fbcdn.net/v/t39.30808-6/453258683_2462891887239687_6606305381973839165_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=PKF0zemNX8sQ7kNvgFm5FDu&_nc_ht=scontent-waw2-2.xx&oh=00_AYC1mBFwHodoNpXBJ3GOEh0c7sXbemwtU7wz9jMjM-IEKQ&oe=66CA9F69"/>
 </div>
+
 <!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/mdknbgre"
-  method="POST"
->
+<form action="https://formspree.io/f/mdknbgre" method="POST">
   <label>
     Your email:
     <input type="email" name="email">
