@@ -29,6 +29,6 @@ Bartosz Wais bartoszwais@yahoo.com
     <textarea name="message"></textarea>
   </label>
   <!-- your other form fields go here -->
-  <button style="background-color:crimson;"type="submit">Send</button>
+<button style="background-color:crimson;"type="submit">Send</button>
 </form>
 </div>
