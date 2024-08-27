@@ -15,7 +15,7 @@ Bartosz Wais bartoszwais@yahoo.com
 </div>
 
 <!-- modify this form HTML and place wherever you want your form -->
-<form action="https://formspree.io/f/mdknbgre" method="POST">
+<form action="https://formspree.io/f/mdknbgre" method="POST" style="padding:2rem;float:right;width:20rem;>
   <label>
     Your email:
     <input type="email" name="email">
