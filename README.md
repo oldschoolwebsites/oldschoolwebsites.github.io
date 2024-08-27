@@ -1,9 +1,5 @@
-<div style="text-align:center;"><img src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.6435-9/69244689_1143565559172333_6243551850335830016_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2a1932&_nc_ohc=Y4VF2BUiuhoQ7kNvgHJLYc2&_nc_ht=scontent-ams4-1.xx&oh=00_AYCY4Qm0lSc1KYv8yZSp5gu2yJC23v2zvVD16-3R-ySacg&oe=66F58140
-"/>
+<div style="text-align:center;"><img src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.6435-9/69244689_1143565559172333_6243551850335830016_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2a1932&_nc_ohc=Y4VF2BUiuhoQ7kNvgHJLYc2&_nc_ht=scontent-ams4-1.xx&oh=00_AYCY4Qm0lSc1KYv8yZSp5gu2yJC23v2zvVD16-3R-ySacg&oe=66F58140"/>
 </div>
-
-https://scontent-ams4-1.xx.fbcdn.net/v/t1.6435-9/69244689_1143565559172333_6243551850335830016_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=2a1932&_nc_ohc=Y4VF2BUiuhoQ7kNvgHJLYc2&_nc_ht=scontent-ams4-1.xx&oh=00_AYCY4Qm0lSc1KYv8yZSp5gu2yJC23v2zvVD16-3R-ySacg&oe=66F58140
-
 
 ## WEB DESIGN,DEVELOPMENT AND SEO SERVICES
 
