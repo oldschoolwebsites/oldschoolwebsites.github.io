@@ -9,12 +9,12 @@ Hey, my name is **Bartosz Wais**, I am a **Web Developer** with more than 20 yea
 expertise in **websites creation** and **Search Engine Optimisation**. 
 
 I work with agencies but also directly with Clients.
-my portfolio can be seen <a href="http://bartoszwaisportfolio.github.io/2024/">here</a>.
+
+My portfolio can be seen <a href="http://bartoszwaisportfolio.github.io/2024/">here</a>.
 
 Bartosz Wais bartoszwais@yahoo.com
 
-<div style="width:25rem;float:left;"><img src="https://scontent-ams2-1.xx.fbcdn.net/v/t39.30808-6/453258683_2462891887239687_6606305381973839165_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=sjMKAoLj4pIQ7kNvgG5OaEw&_nc_ht=scontent-ams2-1.xx&oh=00_AYA9HXJoM9dzjwlyySl9pqBnjEJLIXrRv0rix4udLYYEow&oe=66D3D9E9"/>
-</div>
+<div style="width:25rem;float:left;"></div>
 
 <div style="float:right;width:14rem;">
 <!-- modify this form HTML and place wherever you want your form -->
