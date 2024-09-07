@@ -9,6 +9,7 @@ Hey, my name is **Bartosz Wais**, I am a **Web Developer** with more than 20 yea
 expertise in **websites creation** and **Search Engine Optimisation**. 
 
 I work with agencies but also directly with Clients.
+my portfolio can be seen <a href="http://bartoszwaisportfolio.github.io/2024/">here</a>.
 
 Bartosz Wais bartoszwais@yahoo.com
 
