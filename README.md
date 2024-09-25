@@ -21,16 +21,22 @@ Bartosz Wais bartoszwais@yahoo.com
 <form action="https://formspree.io/f/mdknbgre" method="POST">
   <label style="color:crimson;">
     Your email:
-    <input type="email" name="email">
+    <input type="email" name="email" style="
+    clear: both;
+    float: right;
+">
   </label>
-  <br />
+  <br>
   <label style="color:crimson;">
     Your message:
-    <textarea name="message"></textarea>
+    <textarea name="message" style="
+    clear: both;
+    float: right;
+"></textarea>
   </label>
   <!-- your other form fields go here -->
 
-<button style="background-color:crimson;color: white;font-weight: bold;border: white;padding:1rem;" type="submit">Send</button>
+<button style="background-color:crimson;color: white;font-weight: bold;border: white;padding:1rem;float: right;clear: both;margin-top: 1rem;" type="submit">Send</button>
 
 </form>
 </div>
