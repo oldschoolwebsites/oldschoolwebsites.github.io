@@ -9,7 +9,7 @@
 
 ## REMOTE WEB DESIGN, DEVELOPMENT AND SEO SERVICES
 
-<div style="float:left;width:22rem;">
+<div style="float:right;width:22rem;">
 <!-- modify this form HTML and place wherever you want your form -->
 <h2>Contact me</h2>
 <form action="https://formspree.io/f/mdknbgre" method="POST">
