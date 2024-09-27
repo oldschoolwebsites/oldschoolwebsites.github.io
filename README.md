@@ -8,20 +8,8 @@
 </style>
 
 ## REMOTE WEB DESIGN, DEVELOPMENT AND SEO SERVICES
-Hey, my name is **Bartosz Wais**, I am a **Web Developer** with more than 20 years of 
-expertise in **websites creation** and **Search Engine Optimisation**. 
 
-I work with agencies but also directly with Clients.
-
-My hour rate is 30 USD.
-
-My portfolio can be seen <a href="http://bartoszwaisportfolio.github.io/2024/">here</a>.
-
-Bartosz Wais bartoszwais@yahoo.com
-
-<div style="width:25rem;float:left;"></div>
-
-<div style="margin:0 auto;width:27rem;">
+<div style="float:left;width:22rem;">
 <!-- modify this form HTML and place wherever you want your form -->
 <h2>Contact me</h2>
 <form action="https://formspree.io/f/mdknbgre" method="POST">
@@ -46,3 +34,16 @@ Bartosz Wais bartoszwais@yahoo.com
 
 </form>
 </div>
+
+Hey, my name is **Bartosz Wais**, I am a **Web Developer** with more than 20 years of 
+expertise in **websites creation** and **Search Engine Optimisation**. 
+
+I work with agencies but also directly with Clients.
+
+My hour rate is 30 USD.
+
+My portfolio can be seen <a href="http://bartoszwaisportfolio.github.io/2024/">here</a>.
+
+Bartosz Wais bartoszwais@yahoo.com
+
+
