@@ -1,6 +1,7 @@
 <style>
   body {
-  background-color:red;
+   background: rgb(2,0,36);
+   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(153,153,153,1) 35%, rgba(119,119,119,1) 100%);
   }
 </style>
 
