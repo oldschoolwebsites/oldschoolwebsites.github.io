@@ -9,11 +9,12 @@
 
 ## REMOTE WEB DESIGN, DEVELOPMENT AND SEO SERVICES
 
-<div style="float:right;width:22rem;">
+<div style="float:right;width:22rem;background-color: crimson;
+    padding: 1rem">
 <!-- modify this form HTML and place wherever you want your form -->
 <h2>How can we help you?</h2>
 <form action="https://formspree.io/f/mdknbgre" method="POST">
-  <label style="color:crimson;">
+  <label style="">
     Your email:
     <input type="email" name="email" style="
     clear: both;
@@ -21,7 +22,7 @@
 ">
   </label>
   <br>
-  <label style="color:crimson;">
+  <label style="">
     Your message:
     <textarea name="message" style="
     clear: both;
