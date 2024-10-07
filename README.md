@@ -11,7 +11,7 @@
 
 <div style="float:right;width:22rem;">
 <!-- modify this form HTML and place wherever you want your form -->
-<h2>Contact me</h2>
+<h2>How can we help you?</h2>
 <form action="https://formspree.io/f/mdknbgre" method="POST">
   <label style="color:crimson;">
     Your email:
