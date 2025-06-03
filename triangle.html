@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vue Pascal Increment Triangle (CSS Centered)</title>
+  <script src="https://unpkg.com/vue@3"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f4f4f4;
+    }
+
+    input {
+      margin-bottom: 1rem;
+    }
+
+    .triangle {
+      text-align: center;
+      line-height: 1.8;
+    }
+
+    .row {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <h2>Incrementing Pascal Triangle</h2>
+
+  <label>
+    Number of Rows:
+    <input type="number" v-model.number="rows" min="1" />
+  </label>
+
+  <div class="triangle">
+    <span class="row" v-for="(row, i) in triangle" :key="i">
+      {{ row.join(' ') }}
+    </span>
+  </div>
+</div>
+
+<script>
+const { createApp } = Vue;
+
+createApp({
+  data() {
+    return {
+      rows: 10
+    };
+  },
+  computed: {
+    triangle() {
+      let triangle = [];
+      let current = 1;
+
+      for (let i = 0; i < this.rows; i++) {
+        let row = [];
+        for (let j = 0; j <= i; j++) {
+          row.push(current++);
+        }
+        triangle.push(row);
+      }
+
+      return triangle;
+    }
+  }
+}).mount('#app');
+</script>
+
+</body>
+</html>
