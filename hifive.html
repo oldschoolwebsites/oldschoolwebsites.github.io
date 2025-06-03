@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sunrise Time Checker</title>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .search {
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 8px;
+      font-size: 16px;
+      width: 300px;
+    }
+    button {
+      padding: 8px 12px;
+      margin-left: 8px;
+    }
+    .city {
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      padding: 8px;
+      border: 1px solid #ccc;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+    .early {
+      color: green;
+    }
+    .late {
+      color: red;
+    }
+    .loading {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>Sunrise Times by City</h1>
+
+    <div class="search">
+      <input v-model="searchQuery" @keyup.enter="searchCity" placeholder="Enter a city name..." />
+      <button @click="searchCity">Search</button>
+    </div>
+
+    <div v-if="loading" class="loading">Loading...</div>
+
+    <div v-for="city in cities" :key="city.name" class="city">
+      <h2>{{ city.name }}</h2>
+      <table v-if="city.sunriseData">
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Sunrise (local)</th>
+            <th>Difference from 5:00 AM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(data, month) in city.sunriseData" :key="month">
+            <td>{{ month }}</td>
+            <td>{{ data.sunrise }}</td>
+            <td :class="{ early: data.diff < 0, late: data.diff > 0 }">
+              {{ data.diff }} min
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          cities: [],
+          searchQuery: '',
+          loading: false,
+        };
+      },
+
+      methods: {
+        async getSunriseTime(lat, lon, date) {
+          const response = await axios.get('https://api.sunrise-sunset.org/json', {
+            params: { lat, lng: lon, date, formatted: 0 },
+          });
+          return new Date(response.data.results.sunrise);
+        },
+
+        getTimeDifference(localSunrise) {
+          const reference = new Date(localSunrise);
+          reference.setHours(5, 0, 0, 0);
+          return Math.round((localSunrise - reference) / 60000);
+        },
+
+        async loadSunriseData(city) {
+          const months = Array.from({ length: 12 }, (_, i) => new Date(2025, i, 15));
+          const data = {};
+
+          for (const date of months) {
+            const dateStr = date.toISOString().split('T')[0];
+            const sunriseUTC = await this.getSunriseTime(city.lat, city.lon, dateStr);
+
+            const localSunrise = new Date(
+              sunriseUTC.toLocaleString('en-US', { timeZone: city.timezone })
+            );
+
+            const diff = this.getTimeDifference(localSunrise);
+
+            data[date.toLocaleString('default', { month: 'long' })] = {
+              sunrise: localSunrise.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+              diff,
+            };
+          }
+
+          city.sunriseData = data;
+        },
+
+        async searchCity() {
+          const query = this.searchQuery.trim();
+          if (!query) return;
+
+          this.loading = true;
+
+          try {
+            // 1. Geocode using Nominatim
+            const geoRes = await axios.get('https://nominatim.openstreetmap.org/search', {
+              params: {
+                q: query,
+                format: 'json',
+                limit: 1,
+              },
+            });
+
+            if (!geoRes.data.length) {
+              alert('City not found.');
+              return;
+            }
+
+            const result = geoRes.data[0];
+            const name = result.display_name.split(',')[0];
+            const lat = parseFloat(result.lat);
+            const lon = parseFloat(result.lon);
+
+            // 2. Get timezone from timeapi.io
+            const tzRes = await axios.get('https://timeapi.io/api/TimeZone/coordinate', {
+              params: { latitude: lat, longitude: lon },
+            });
+
+            const timezone = tzRes.data.timeZone;
+
+            const newCity = { name, lat, lon, timezone };
+            this.cities.push(newCity);
+            await this.loadSunriseData(newCity);
+          } catch (err) {
+            console.error(err);
+            alert('Error fetching city or timezone data.');
+          } finally {
+            this.loading = false;
+            this.searchQuery = '';
+          }
+        }
+      },
+    }).mount('#app');
+  </script>
+</body>
+</html>
