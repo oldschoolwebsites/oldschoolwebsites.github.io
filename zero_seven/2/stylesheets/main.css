@@ -1,0 +1,252 @@
+html {
+  background-image: url(../images/html_bg.gif);
+  background-repeat: repeat;
+  background-position: 0 -97px;
+  background-color: #cc0070; }
+
+body {
+  margin: 0px 0px;
+  padding-top: 22px;
+  background-image: url(../images/body_bg.jpg);
+  background-repeat: repeat-x;
+  min-width: 960px;
+  background-color: white; }
+  body #page {
+    background-image: url(../images/page_bg.gif);
+    width: 950px;
+    margin: 0 auto;
+    background-position: -4px 0; }
+    body #page #header {
+      background-image: url(../images/header.jpg);
+      background-repeat: no-repeat;
+      height: 232px;
+      background-position: 0px 1px; }
+      body #page #header #logo img {
+        float: left;
+        margin-top: 43px;
+        margin-left: 35px; }
+      body #page #header #focus img {
+        float: right;
+        margin-top: -22px;
+        margin-right: 23px; }
+      body #page #header #nav {
+        height: 42px;
+        background-image: url(../images/navigation_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: 0px -2px;
+        width: 948px;
+        z-index: 99;
+        float: left;
+        margin-left: 1px; }
+        body #page #header #nav li {
+          display: inline;
+          height: 44px;
+          padding-top: 0px;
+          float: left; }
+          body #page #header #nav li a {
+            background-image: url(../images/navigation_bg.jpg);
+            background-position: 0px 0px;
+            text-decoration: none;
+            padding-bottom: 21px;
+            padding-top: 4px;
+            margin-top: 1px;
+            float: left; }
+        body #page #header #nav #nav_home a.active {
+          padding-left: 84px;
+          background-position: 0px -46px; }
+        body #page #header #nav #nav_home a {
+          padding-left: 84px;
+          background-position: 0px 0px; }
+          body #page #header #nav #nav_home a:hover {
+            background-position: 0px -46px; }
+        body #page #header #nav #nav_program_overview a {
+          padding-left: 158px;
+          background-position: -89px 0px; }
+          body #page #header #nav #nav_program_overview a:hover {
+            background-position: -89px -46px; }
+        body #page #header #nav #nav_research_team  a {
+          background-position: -251px 0px;
+          padding-right: 130px; }
+          body #page #header #nav #nav_research_team  a:hover {
+            background-position: -251px -46px; }
+        body #page #header #nav #nav_training_and_supervision a {
+          background-position: -385px 0px;
+          padding-left: 183px; }
+          body #page #header #nav #nav_training_and_supervision a:hover {
+            background-position: -385px -46px; }
+        body #page #header #nav #nav_publications a {
+          background-position: -572px 0px;
+          padding-left: 118px; }
+          body #page #header #nav #nav_publications a:hover {
+            background-position: -572px -46px; }
+        body #page #header #nav #nav_pup_therapists a {
+          background-position: -692px 0px;
+          padding-left: 133px; }
+          body #page #header #nav #nav_pup_therapists a:hover {
+            background-position: -692px -46px; }
+        body #page #header #nav #nav_contact_us a {
+          background-position: -829px 0px;
+          padding-right: 114px; }
+          body #page #header #nav #nav_contact_us a:hover {
+            background-position: -829px -46px; }
+    body #page #content {
+      padding: 10px 15px;
+      margin-right: 7px; }
+      body #page #content #articles {
+        float: left;
+        width: 559px; }
+        body #page #content #articles .article {
+          padding-bottom: 20px;
+          border-bottom: 2px dotted #AFAFAF;
+          margin-bottom: 15px;
+          padding-left: 0px;
+          padding-right: 8px;
+          margin-left: 18px; }
+          body #page #content #articles .article h1 {
+            font-family: Helvetica, Arial, "Luxi Sans", sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            color: #00258F;
+            margin-top: 14px;
+            margin-bottom: 7px; }
+          body #page #content #articles .article p {
+            font-family: Arial, Helvetica, "Luxi Sans", sans-serif;
+            font-size: 12px;
+            font-weight: lighter;
+            word-spacing: 1.2px;
+            line-height: 1.4em;
+            color: #030303; }
+          body #page #content #articles .article a {
+            font-family: Arial, Helvetica, "Luxi Sans", sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            word-spacing: 1.2px;
+            line-height: 1.4em;
+            color: #00258F;
+            text-decoration: none;
+            border: 2px solid white; }
+            body #page #content #articles .article a:hover {
+              background-color: #00258f;
+              color: white;
+              border: 2px solid #00258f; }
+      body #page #content #latestNews {
+        float: right;
+        width: 266px;
+        padding-right: 24px; }
+        body #page #content #latestNews h1 {
+          font-family: Helvetica, Arial, "Luxi Sans", sans-serif;
+          font-size: 18px;
+          font-weight: bold;
+          color: #3D7E37;
+          margin-top: 14px;
+          margin-bottom: 7px; }
+        body #page #content #latestNews .news {
+          padding-bottom: 7px;
+          border-bottom: 2px dotted #AFAFAF;
+          margin-bottom: 7px; }
+          body #page #content #latestNews .news h3.event {
+            font-family: Arial, Helvetica, "Luxi Sans", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            word-spacing: 1.2px;
+            line-height: 1.4em;
+            color: #030303; }
+          body #page #content #latestNews .news h3.date {
+            font-family: Arial, Helvetica, "Luxi Sans", sans-serif;
+            font-size: 10px;
+            font-weight: normal;
+            word-spacing: 1.2px;
+            line-height: 1.4em;
+            color: #999999;
+            padding: 6px 0; }
+          body #page #content #latestNews .news p {
+            font-family: Arial, Helvetica, "Luxi Sans", sans-serif;
+            font-size: 12px;
+            font-weight: lighter;
+            word-spacing: 1.2px;
+            line-height: 1.4em;
+            color: #030303; }
+          body #page #content #latestNews .news a {
+            font-family: Arial, Helvetica, "Luxi Sans", sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            word-spacing: 1.2px;
+            line-height: 1.4em;
+            color: #3D7E37;
+            text-decoration: none;
+            border: 2px solid white; }
+            body #page #content #latestNews .news a:hover {
+              background-color: #3D7E37;
+              color: white;
+              border: 2px solid #3D7E37; }
+      body #page #content #contactUs {
+        float: right;
+        width: 266px;
+        padding-right: 24px; }
+        body #page #content #contactUs h1 {
+          font-family: Helvetica, Arial, "Luxi Sans", sans-serif;
+          font-size: 18px;
+          font-weight: bold;
+          color: #CD0074;
+          margin-top: 14px;
+          margin-bottom: 7px; }
+        body #page #content #contactUs p {
+          font-family: Arial, Helvetica, "Luxi Sans", sans-serif;
+          font-size: 12px;
+          font-weight: lighter;
+          word-spacing: 1.2px;
+          line-height: 1.4em;
+          color: #030303; }
+        body #page #content #contactUs a {
+          font-family: Arial, Helvetica, "Luxi Sans", sans-serif;
+          font-size: 12px;
+          font-weight: bold;
+          word-spacing: 1.2px;
+          line-height: 1.4em;
+          color: #CD0074;
+          text-decoration: none;
+          border: 2px solid white; }
+          body #page #content #contactUs a:hover {
+            background-color: #CD0074;
+            color: white;
+            border: 2px solid #CD0074; }
+    body #page #footer {
+      float: none;
+      clear: both;
+      margin-right: 2px;
+      background-image: url(../images/footer_bg.gif);
+      background-repeat: repeat-x;
+      background-position: 0 bottom;
+      position: relative;
+      bottom: -30px;
+      padding-bottom: 35px;
+      height: 20px;
+      margin-bottom: 20px; }
+      body #page #footer ul {
+        position: relative;
+        bottom: -52px;
+        float: left; }
+        body #page #footer ul li {
+          display: inline;
+          color: white;
+          text-align: left;
+          font-size: 10px;
+          font-family: Arial, Helvetica, "Luxi Sans", sans-serif;
+          padding-right: 5px;
+          padding-left: 5px;
+          border-right: 1px solid #ccc; }
+          body #page #footer ul li a {
+            color: white; }
+        body #page #footer ul li.last {
+          border-right: none; }
+      body #page #footer p {
+        position: relative;
+        bottom: -56px;
+        color: white;
+        text-align: right;
+        font-size: 10px;
+        font-family: Arial, Helvetica, "Luxi Sans", sans-serif;
+        float: right;
+        padding-bottom: 20px; }
+        body #page #footer p a {
+          color: white; }

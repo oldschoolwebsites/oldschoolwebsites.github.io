@@ -1,0 +1,44 @@
+.loading {
+    display: none;
+}
+* {
+	box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1200px) {
+    #forecast {
+        width: 1200px;
+        height: 120px;
+        overflow:hidden;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 822px) and (max-width: 1199px) {
+    ol {
+        margin: 0 auto;
+        width: 888px;
+    }
+    li {
+        width: 400px;
+        float: left;
+        margin: 22px
+    }
+}
+
+
+li {
+    color: #bac59b;
+    background-color: #3f4e72;
+    margin-bottom: 22px;
+    font-family:arial, sans-serif;
+    text-align:center;
+    padding: 17px;
+}
+
+li img {
+    vertical-align:middle;
+}
+body > img {
+    width:100%;
+}
+

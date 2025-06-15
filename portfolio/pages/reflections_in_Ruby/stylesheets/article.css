@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>untitled</title>
+	<style id='page-skin-1' type='text/css'>
+	
+	* {
+		padding:0;
+		margin:0;
+		
+	}
+	body {
+
+		padding-left:60px;
+		}
+	
+	div.nav {
+		border-bottom-style: solid;
+		border-bottom-color: black;
+		height:4em;
+	}
+		
+	div.article {
+	width:29em;
+	float:left;
+	}
+	
+	div.article p {
+
+		margin:0 auto 15px;
+		
+		width:26em;
+
+		margin-top:0;
+
+		line-height:1.3em;
+		text-align: justify;
+		
+		color:#333333;
+		font-family:Georgia,Times,"Times New Roman",serif;
+		font-size:1em;
+		font-size-adjust:none;
+		font-style:normal;
+		font-variant:normal;
+		font-weight:normal;
+		line-height:1.5em;
+		
+	}
+	div.nav ul{
+		list-style-type: none;
+	}
+	
+	div.nav ul h1{
+		list-style-type: none;
+		font-weight:bold;
+		text-align:left;
+	
+
+		margin-top:0;
+
+		line-height:1.3em;
+		text-align:left;
+
+		color:#333333;
+		font-family:Georgia,Times,"Times New Roman",serif;
+		font-size:2em;
+		font-size-adjust:none;
+		font-style:normal;
+		font-variant:normal;
+		line-height:1.5em;
+		text-transform: uppercase;
+		padding-left:0.8em;
+		
+	}
+
+	div.nav h2{
+		font-weight:bold;
+		text-align:left;
+	
+
+		margin-top:0;
+
+		line-height:1.3em;
+		text-align:left;
+
+		color:#333333;
+		font-family:Georgia,Times,"Times New Roman",serif;
+		font-size:1em;
+		font-size-adjust:none;
+		font-style:normal;
+		font-variant:normal;
+		line-height:1.5em;
+		text-transform: uppercase;
+		padding-left:0.8em;
+		
+	}
+	
+	div.article h2 {
+		
+		font-weight:bold;
+		margin:0 auto 15px;
+		text-align:left;
+		width:410px;
+
+		margin-top:0;
+
+		line-height:1.3em;
+		text-align:left;
+
+		color:#333333;
+		font-family:Georgia,Times,"Times New Roman",serif;
+		font-size:1em;
+		font-size-adjust:none;
+		font-style:normal;
+		font-variant:normal;
+		line-height:1.5em;
+		text-transform: uppercase;
+		padding-left:0.8em;
+	}
+	
+	cite {
+		font-style:italic;
+	}
+	
+	strong {
+	font-weight:bold;
+	font-size:0.8em;
+	}
+
+	strong.color {
+	background-color:#FFFF33;
+	font-style:normal;
+	}
+	
+	strong.colorCode {
+	margin-left:2em;
+	background-color:#FFFF33;
+	font-style:normal;
+	text-transform:none;
+	
+	}
+	
+	strong.listTitle {
+	font-weight:bold;
+	text-transform:none;
+	font-size:0.9em;
+		}
+	
+	.afterList{
+	width:18em;
+	height:1px;
+	margin:auto;
+	margin-bottom:2em;
+	background-color: #ccc;
+	color:#ccc;
+	align:center;
+	}
+	
+	.focusOn li {
+		list-style-type: square;
+		margin-left:4em;
+	}
+	
+	
+	.focusOn li p {
+		width:20em;
+		 }
+	
+	#Page {
+	
+	
+	}
+	
+	
+	
+	</style>
+
+	
+</head>
+
+<body>
+	
+	<div class='nav'>
+		<ul><li><h1>Navigation</h1></li>
+	</div>
+	
+	<div class='article'>
+	<h2>Using reflection in Ruby</h2>
+	<p><cite>
+		<strong class='color'>Reflection in Ruby is a great way of doing the things at runtime.</strong>
+		 Sometimes you need to create an instance of class depending upon the parameter passed
+		 to a function. This parameter could be the name of the class to be created.</cite></p>
+		
+	<p>One way to do this is to write conditional loops and create the object. But if there
+			 are too many classes then this would become messy. Here comes reflection to rescue.</p>
+		
+	
+	<p><strong class='listTitle'>In Ruby using reflection you can get the following information:</strong></p>
+	
+	<ul class='focusOn'>
+			<li><p>What all class currently exists?</p></li>
+			<li><p>Their methods information<p></li>
+			<li><p>Their class hierarchy and lot more</p></li></ul>
+
+	<hr class='afterList'/>
+	
+	<p>Ruby provide a module called <strong>ObjectSpace</strong> that lets you to use reflection and
+		 see all the above mentioned information.</p>
+	
+	<p><strong class='colorCode'>ObjectSpace.each_object { |x| puts x }</strong> 	will print all living,
+	 	nonimmediate objects in Ruby process. If you specify the type of objects that you want then
+		you can specify it as option to each_object method. So,</p>
+	
+	<p><strong class='colorCode'>ObjectSpace.each_object(Class) { |x| puts x}</strong> 	will print all
+		 the classes that are there in the Ruby process.</p>
+	
+	<p>	So now the above problem becomes simple. Iterate over all the classes compare their name.
+		 If name matches then create object and execute whichever function you like.</p>
+				
+	
+	<p class='colorCode'><strong class='colorCode'>class ClassFromString<br />
+	&nbsp;&nbsp;@@counter = 0<br />
+	def initialize<br />
+	&nbsp;&nbsp;@@counter += 1<br />
+	end<br />
+	def getCounterValue<br />
+	&nbsp;&nbsp;puts @@counter<br />
+	end<br />
+	end<br /></strong></p>
+	
+	</div>
+	
+</body>
+</html>

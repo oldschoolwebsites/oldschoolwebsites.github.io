@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>book_example</title>
+<script src="../Javascripts/mootools-1.2.1-core-nc.js" type="text/javascript" charset="utf-8"></script>
+<script src="../Javascripts/mootools-1.2.1-core-nc.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/JavaScript"> 
+var morphSet = function(){
+	//now we can set the style properties just like Fx.Tween
+	//except now we can set multiple style properties
+	this.set({
+		'width': 100,
+		'height': 100,
+		'background-color': '#eeeeee'
+	});
+}
+ 
+var morphStart = function(){
+	//we can also start out morph like we would start a tween
+	//except we can now input multiple style properties
+	this.start({
+		'width': 300,
+		'height': 300,
+		'background-color': '#d3715c'
+	});
+}
+ 
+ 
+var morphReset = function(){
+	//set the values back to start
+	this.set({
+		'width': 0,
+		'height': 0,
+		'background-color': '#ffffff'
+	});
+}
+ 
+window.addEvent('domready', function() {
+    //first, lets throw our element into a var
+	var morphElement = $('morph_element');
+ 
+	//now, we create our morph
+	var morphObject = new Fx.Morph(morphElement);
+ 
+	//here we add the click event to the buttons
+	//and we bind morphObject and the function
+	//allowing us to use "this" above
+	$('morph_set').addEvent('click', morphSet.bind(morphObject));  
+	$('morph_start').addEvent('click', morphStart.bind(morphObject));
+	$('morph_reset').addEvent('click', morphReset.bind(morphObject));
+});
+</script> 
+	
+</head>
+<body>
+<h2>chuj</h2>
+<div id="morph_element"></div>
+<button id="morph_set">Set</button>
+<button id="morph_start">Start</button>
+<button id="morph_reset">reset</button>
+</body>
+</html>

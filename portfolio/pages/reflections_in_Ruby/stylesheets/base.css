@@ -1,0 +1,223 @@
+
+* {
+	padding:0;
+	margin:0;
+		
+}
+#page {
+	width:54em;
+	margin:auto;
+	
+	}
+
+img {margin-top:10px;border:none;}
+
+/* NAV */
+	div.nav {
+		border-bottom-style: solid;
+		border-bottom-color: black;
+		border-bottom-width: 15px;
+		min-width:800px;
+		height:4em;
+		margin-left:3em;
+		width:80.6%;
+		position:fixed;
+		top:0;
+		left:0;
+		background-color:#fff;
+	}
+		div.nav ul{
+			margin:0 auto;
+			width:29em;
+		}
+		div.nav ul li{
+			display:inline;
+			width:14em;
+		}
+		div.nav a img {
+						
+						display:inline;
+						float:left;
+		}
+		
+			
+	
+		div.nav	h1 {
+			  color:#333; 
+			  font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif; 
+			  font-style:italic;
+			  font-weight:; normal;
+			
+			}
+	
+/* END OF NAV */
+
+/* DIV.ARTICLE SETTINGS */	
+	div.article {
+		width:51em;
+		margin-left:3em;
+		padding-top:7em;
+		padding-left:3em;
+		padding-bottom:7em;
+		
+		background-image:url('base/article-border.jpg');
+		background-repeat: repeat-y;
+		background-position: 205px 48px;
+		
+		
+	}
+		div.article h1 {
+		text-align:center;
+		}
+		div.article h2 {
+			font-weight:bold;
+			margin:10px auto 15px;
+			padding-left:5em;
+			width:21em;
+			
+
+			line-height:1.3em;
+			text-align:left;
+
+			color:#333333;
+			font-family:Georgia,Times,"Times New Roman",serif;
+			font-size:1em;
+			font-size-adjust:none;
+			font-style:normal;
+			font-variant:normal;
+			line-height:4.6em;
+			text-transform: uppercase;
+			
+			background-image:url('base/subject-1.gif');background-repeat: no-repeat;
+			border: dashed 1px black;
+			background-position: 12px 8px;
+		}
+		div.article p {
+			font-family:Georgia,Times,"Times New Roman",serif;
+			font-size:1em;
+			font-size-adjust:none;
+			font-style:normal;
+			font-variant:normal;
+			font-weight:normal;
+			line-height:1.5em;
+			color:#333333;
+			margin:0 auto 20px;
+			width:26em;
+			text-align: justify;
+			
+		}
+		.gallery {
+			text-align:center !important;
+		}
+		div.article ul {
+			margin:0 auto 0px;
+			width:26em;
+			list-style-type: none;
+		}
+		
+		div.article p.list {
+			margin:0 auto 0px;
+		}
+			ul li p {
+				padding-left:4em;
+				margin:0 auto 0px;
+				background-image:url('base/arrow_list.gif');background-repeat: no-repeat;
+				width:1em;
+				color:#030 !important;
+			}
+
+				ul li p.listTitle {
+					1text-align: center;
+					background-image:none;
+					font-weight:bold;
+					font-size:0.8em;
+					padding-left:0.2em;
+					color:#333 !important;
+				}
+				
+				.finalWord {
+					text-align:right !important;
+				}
+
+/* END OF DIV.ARTICLE SETTINGS */
+
+
+
+
+	cite {
+		font-style:italic;
+			
+	}
+
+/* STRONG VARIATIONS */
+	strong {
+		font-weight:bold;
+		font-size:0.8em;
+	}
+
+		strong.highlighted {
+			background-color:#FFFF33;
+			font-style:normal;
+		}
+
+		strong.colorCode {
+			margin-left:2em;
+			background-color:#FFFF33;
+			font-style:normal;
+			text-transform:none;
+		}
+		strong.Code {
+			
+			
+			font-style:normal;
+			text-transform:none;
+			border-top:solid 1px black;
+		}
+		strong.love {
+			color:#600;
+			font-size:1em;
+			
+			}
+				
+/* END OF STRONG VARIATIONS */
+/* FOOTER */
+	div.footer {
+		border-top-style: solid;
+		border-top-color: black;
+		border-top-width: 7px;
+		height:4em;
+		min-width:800px;
+		margin-left:3em;
+		width:80.6%;
+		text-align:left;
+		position:fixed;
+		bottom:0;
+		left:0;
+		background-color:#fff;
+		background-image:url('images/footer-corner.png');background-repeat: no-repeat;
+		background-position: 360px -130px;
+	}
+	
+	
+		div.footer ul li{
+			display:inline;
+			text-align:right;
+		}
+			div.footer ul h3{
+			font-family:Georgia,Times,"Times New Roman",serif;
+			font-size:1em;
+			font-size-adjust:none;
+			font-style:normal;
+			font-weight:bold;
+			font-variant:normal;
+			line-height:1.5em;
+			color:#333333;
+			text-transform: uppercase;
+			text-align:right;
+			}
+			div.footer ul h3 a {
+			font-variant: small-caps;
+			color:#660000;  
+			} 
+	
+/* END OF NAV */

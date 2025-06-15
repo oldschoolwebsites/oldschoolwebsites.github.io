@@ -1,0 +1,111 @@
+html {
+  background-color: #FBEBD2; }
+  html body {
+    background-color: #FBEBD2; }
+    html body h1 {
+      font-size: 180%; }
+    html body ol {
+      padding: 5px;
+      text-align: left; }
+      html body ol li {
+        border-top: 3px solid #cdcdcd;
+        margin-bottom: 8px; }
+    html body input {
+      float: right;
+      clear: right; }
+    html body textarea {
+      float: right;
+      clear: right; }
+    html body #notice {
+      color: #FF9900;
+      border: 3px solid #FF9900; }
+    html body .very_recent {
+      color: red; }
+    html body #page {
+      background-color: #FBEBD2;
+      margin: auto;
+      margin-top: 3px;
+      padding: 5px;
+      width: 800px; }
+      html body #page #header {
+        margin-bottom: 3px;
+        border: 2px solid #ACACB9;
+        font-size: 200%; }
+        html body #page #header .header_placeholder {
+          width: 786px;
+          text-align: center;
+          padding: 5px;
+          padding-top: 50px;
+          height: 68px;
+          background-color: orange;
+          color: white; }
+          html body #page #header .header_placeholder span.motto {
+            vertical-align: super;
+            font-style: oblique; }
+      html body #page #nav {
+        border: 2px solid #C8C8D0;
+        margin-bottom: 5px; }
+        html body #page #nav ul {
+          width: 778px;
+          height: 17px;
+          background-color: #0A3BAC;
+          text-align: right;
+          color: #0C8ACE;
+          padding-right: 20px;
+          padding-bottom: 5px;
+          padding-top: 2px; }
+          html body #page #nav ul a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-variant: small-caps; }
+            html body #page #nav ul a:hover {
+              color: yellow;
+              text-decoration: overline; }
+      html body #page #content {
+        clear: left;
+        text-align: center;
+        float: left;
+        width: 700px;
+        border: 3px solid#ACACB9;
+        padding: 5px;
+        margin-bottom: 3px;
+        background-color: #F3F1F1; }
+        html body #page #content .catalog {
+          float: left;
+          width: 230px;
+          height: 258px;
+          1border-right: 3px solid black;
+          border-top: 3px solid black;
+          margin-right: 1px;
+          margin-bottom: 12px;
+          border-top: 3px double black;
+          border-bottom: 3px double black; }
+          html body #page #content .catalog .image {
+            height: 200px;
+            overflow: hidden; }
+          html body #page #content .catalog .price {
+            padding-bottom: 2px; }
+          html body #page #content .catalog .name_and_brand {
+            padding-top: 2px; }
+        html body #page #content hr {
+          margin-top: 15px;
+          clear: both;
+          display: block; }
+      html body #page #sidebar {
+        clear: right;
+        float: right;
+        border: 3px solid white;
+        margin-bottom: 3px; }
+        html body #page #sidebar .sidebar_placeholder {
+          width: 50px;
+          text-align: center;
+          height: 600px;
+          background-color: #F7EBD4; }
+      html body #page #footer {
+        border: 3px solid gray;
+        clear: both; }
+        html body #page #footer .footer_placeholder {
+          text-align: center;
+          color: white;
+          background-color: #000; }

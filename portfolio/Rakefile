@@ -1,0 +1,36 @@
+PLATFORM ||= "custom"
+
+require 'colored'
+
+module Project
+	NAME = ".." 
+end
+
+task :default => [:welcome]
+
+task :test do
+	ruby "test/unittest.rb"
+end
+
+task :welcome do
+	puts "Hi and welcome to the project:".green + " " + "#{Project::NAME}".red
+end
+
+task :update_all_pages do
+	templates = Dir.glob("pages/*.haml")
+	stylesheets = Dir.glob("stylesheets/*.sass")
+
+	puts "#{templates.size} templates found".blue.bold
+	templates.each do |page|
+		output_file = page.sub('.haml', '.html').sub('pages', 'public')
+		`haml "#{page}" "#{output_file}"`
+		puts "#{output_file} updated".green.bold
+	end
+
+	stylesheets.each do |sh|
+		sass_output_file = sh.sub('.sass', '.css').sub('stylesheets', 'public/stylesheets')
+		`sass "#{sh}" "#{sass_output_file}"`
+		puts "#{sass_output_file} updated".green.bold
+	end
+end
+

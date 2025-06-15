@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Reflections in Ruby [edited by otherwi.se]</title>
+	
+	<link rel="stylesheet" type="text/css"
+		  href="./stylesheets/base.css" media="all" />
+
+</head>
+
+<body>
+<div id='page'>	
+<div class='nav'>
+	<ul>
+		<li><a href="#"><img src='./stylesheets/images/logo.gif' alt='otherwise logo' /></a></li>
+		
+		<li><h1>From Russia with <strong class='love'>Love</strong></h1></li>
+	</ul>
+</div>
+	
+<div class='article'>
+	
+	<p class='gallery'><img src='./stylesheets/images/lighthouse-01.gif' 
+		alt='Pigeon Point Lighthouse @ sunset. The crowd are gathering for the annual relighting of the 
+		first order Fresnel lens.' /></p>
+	
+	<h1>Ruby</h1>
+
+	<p>
+		<cite>Reflection, also called introspection, simply means that a 
+		program can examine its state and its structure.</cite>
+		<strong class='highlighted'> Reflection in Ruby is a great way of doing the things at
+			 runtime.</strong>
+			 
+		 <cite>Sometimes you need to create an instance of
+		 class depending upon the parameter passed to a function.
+		 This parameter could be the name of the class to be
+		 created.</cite>
+	</p>
+			
+	<h2>
+		Using reflection in Ruby
+	</h2>
+		
+	<p>One way to do this is to write conditional loops and create
+		 the object. But if there are too many classes then this
+		 would become messy. Here comes reflection to rescue.</p>
+		
+	
+	<ul>
+		<li><p class='listTitle'>In Ruby using reflection you can get the following 
+				information:</p>
+		</li>
+		<li><p>What are the all existing classes?</p></li>
+		<li><p>Their methods information</p></li>
+		<li><p>Their class hierarchy and lot more</p></li>
+	</ul>
+
+	<p>Ruby provide a module called <strong>ObjectSpace</strong> that lets you to 
+		use reflection and see all the above mentioned 
+		information.</p>
+	
+	<p>
+		<strong class='colorCode'>ObjectSpace.each_object { |x| puts x }</strong> will print all living,
+	 	nonimmediate objects in Ruby process. If you specify the 
+		type of objects that you want then you can specify it as 
+		option to <strong>each_object method</strong>.</p>
+	
+	<p><strong class='colorCode'>ObjectSpace.each_object(Class) { |x| puts x}</strong> 	will print all 
+		the classes that are there in the Ruby process.</p>
+	
+	<p>So now the above problem becomes simple. Iterate over all the classes compare their name. 
+		If name matches then create object and execute whichever function you like.</p>
+	<p class='gallery'><a href="#"><img src='./stylesheets/images/code-01.jpg' alt='code' /></a></p>
+				
+	<p><strong>Once you get the object you can use any method of that object.</strong> 
+		For e.g. you can use <strong>superclass method</strong> to get the name of the 
+		parent class and so on and can build complete hierarchy dynamically.</p>
+	
+	<ul>
+		<li><p class='listTitle'>You can get the information about methods of a given class using methods:</p>
+		
+		</li> 
+		<li><p><strong class='colorCode'>private_methods()</strong></p></li>
+		<li><p><strong class='colorCode'>protected_methods()</strong></p></li>
+	</ul> 
+	
+	<p>Both are defined in <strong>Object class</strong> which is base class for each 
+		object.</p>
+	
+	<p class='finalWord'><cite>Reflection is great thing but expect performance hit when 
+		you use it.</cite></p>
+	
+	
+
+</div>
+<div class='footer'>
+	<ul>
+		<li><h3>back to [<a href='http://otherwi.se'>otherwi.se</a>]</h3></li>
+				
+	</ul>
+</div>
+</div>	
+</body>
+</html>

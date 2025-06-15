@@ -1,0 +1,82 @@
+html {
+  background-color: #3bacb1;
+  font-size: 18px;
+  line-height: 28px; }
+
+body {
+  font-family: Arial, sans-serif;
+  color: #010101;
+  padding: 1rem; }
+  @media (max-width: 600px) {
+    body {
+      text-align: center; } }
+
+h1 {
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #fefefe;
+  font-weight: bold; }
+
+a {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #c6f6ff;
+  text-decoration: none;
+  border-bottom: 3px solid #c6f6ff;
+  padding-bottom: 3px;
+  line-height: 2rem; }
+
+a[href$='pdf'] {
+  font-size: 0.9rem;
+  border-bottom: 1px dashed; }
+
+a[href$='pdf']:hover {
+  color: #fffffe;
+  border-bottom: 1px solid #fffffe; }
+
+li > h2, ul > h2 {
+  font-weight: bold; }
+
+li h3 {
+  margin-top: 2rem;
+  font-style: italic;
+  font-weight: bold; }
+  li h3 + p {
+    line-height: 1.5rem; }
+
+ul > h2 {
+  margin-right: 0;
+  line-height: 2rem;
+  border-top: 3px solid #101010; }
+  @media (min-width: 600px) {
+    ul > h2 {
+      margin-right: 2rem; } }
+
+header {
+  margin-bottom: 1rem; }
+
+article {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 1.2rem; }
+  article > header, article > ul {
+    flex-basis: calc(100%);
+    justify-content: top;
+    flex-direction: column;
+    margin-bottom: 4rem; }
+    @media (min-width: 1200px) {
+      article > header, article > ul {
+        flex-basis: calc(25%); } }
+    @media (min-width: 600px) and (max-width: 1200px) {
+      article > header, article > ul {
+        flex-basis: calc(50%); } }
+  article header {
+    font-style: italic; }
+
+ul {
+  padding: 0;
+  list-style: none; }
+
+/*# sourceMappingURL=styles_new.css.map */

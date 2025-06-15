@@ -1,0 +1,249 @@
+html {
+	background-image: url(../images/page/background.jpg);
+	background-repeat:repeat-x;
+	background-color:black;
+}
+	body {
+		overflow: scroll;
+	}
+		#page {
+			color:#333;
+			background-color:white;
+			margin:0 auto;
+			width:900px;
+		}
+/* HEADER */
+			#header {
+				background-color: #fff;
+				background-image: url(../images/header/background/cv-main.jpg);
+				background-repeat: no-repeat;
+				border-bottom:10px solid #ddd;
+				border-top: 1px solid #ddd;
+				height:190px;
+				margin-top:20px;
+				padding-right:10px;
+				padding-top:30px;
+				text-align:right;
+			}
+				#header h1 {
+					font-family:georgia;
+					font-size:28px;
+					font-weight:normal;
+					padding-bottom:10px;
+				}
+					#header h1 .email {font-family:fantasy;}
+	/* NAVIGATION */
+				#header #navigation {
+					float:right;
+					height:114px;
+					overflow:hidden;
+					padding-bottom:10px;
+					width:450px;
+				}
+					#header #navigation ul {float:right;}
+						#header #navigation ul li {
+							display:inline;
+							float:left;
+							margin-left:5px;
+							text-align:center;
+						}
+					#header #navigation a, #header #navigation img {border:none;display:inline;}
+					#header #navigation img {width:52px;}
+					#header #navigation a { text-decoration:none;}
+					#header #navigation p, #header #navigation span {
+						display:block;
+						color:#333;
+						font-family:Cambria,Garamond,Georgia,Times,serif;
+						font-size:11px;
+						margin-left:5px;
+						width:32px;
+					}
+					#header #navigation p:hover {color: #900;}	
+	/* END OF NAVIGATION */
+/* END OF HEADER */
+
+/* ARTICLES  */
+			#articles_wrapper{
+				background-image: url(../images/articles/articles_background.jpg);
+				font-family:georgia;
+				font-size:16px;
+				font-weight:normal;
+				height:358px; /*modified by JS */
+				overflow: hidden;
+				padding-left:2px;
+				text-align:justify;
+			}
+				#articles_wrapper h3{width:420px;}		
+					#articles_wrapper h3.publication_date{padding-top:10px;width:420px;}		
+						#articles_wrapper h3.title a{
+							1color: #666;
+							color:#004276;
+							font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
+							font-style: italic;
+							font-weight: normal;
+							line-height:1.2em;
+							text-decoration:none;
+							width:420px;
+							border-bottom:1px dashed #004276;
+						}
+						#articles_wrapper h3.title a:hover{1text-decoration:underline;
+							border-bottom:1px solid #004276;}	 				
+				#articles_wrapper p {
+					width:420px;
+					padding-bottom:40px;
+					
+				}			
+				#articles_wrapper img {
+					border-left: 4px double #ddd;
+					float:right;
+					padding:0 10px 30px 80px;
+					width:331px;
+					margin-top:10px;
+				}
+				#article_1, #article_2 {
+					background-image: none;
+					background-color: white;
+					background-repeat: no-repeat;
+					padding-left:25px;
+					margin:0 10px;
+					padding-bottom:10px;
+					border-bottom: 1px solid #ddd;
+				}
+/* END OF ARTICLES  */	
+
+/* OVERVIEW */
+			#subpages_wrapper {
+				padding-left:1px;padding-right:1px;
+				background-image: url(../images/overview/wrapper_background.jpg);
+				background-position:0 0;background-repeat: repeat;
+				background-color:black;
+				height:1690px; /*328px * 5 */
+				overflow:hidden;
+			}
+						
+				#academic, #skills, #tools, #hobbies, #q-and-a {
+					overflow:hidden;
+					height:328px;
+					float:left;
+					border-top:10px solid #000;
+					border-right: 1px solid #ddd;
+					background-repeat: no-repeat;
+					background-color: #fff;
+					
+				}
+				
+				#academic {background-image: url(../images/overview/academic.jpg);}
+				#skills {background-image: url(../images/overview/skills.jpg);}
+				#tools {background-image: url(../images/overview/tools.jpg);}
+				#hobbies{background-image: url(../images/overview/hobbies.jpg);}
+				#q-and-a{background-image: url(../images/overview/q-and-a.jpg);border-right:none;}
+				
+					.overview {
+						float:left;
+						height:262px;
+						overflow:hidden;
+						margin-top:66px;
+						width:178.80px;
+
+					}
+				
+					#academic ul,#skills ul,#tools ul,#hobbies ul,#q-and-a ul{
+						background-image: url(../images/overview/background.jpg);
+						background-repeat: no-repeat;
+					}
+					
+					#skills ul{background-position: -179px 0;}
+					#tools ul{background-position: -358px 0;}
+					#hobbies ul{background-position: -537px 0;}
+					#q-and-a ul{background-position: -716px 0;}
+		
+					.overview h2 {
+						border-bottom: 1px solid #ddd;
+						border-top: 1px solid #ddd;
+						font-size:16px;
+						margin-top:0;
+						padding-top:2px;
+						text-align:center;
+						
+					}
+					
+					.overview ul{
+						background-color:#F8F7F3;
+						height:219px;
+						padding:10px 8px 10px 23px;
+
+					}
+						.overview ul li{
+							font-family:Cambria,Garamond,Georgia,Times,serif;
+							font-size:12px;
+							list-style: square;
+							padding-bottom:5px;
+							padding-left:3px;
+						}
+				
+				.content {padding-top:16px;
+					border-left: 1px solid #ddd;
+					height:312px;
+					background-image: url(../images/overview/content_background2.jpg);
+					background-position:bottom left;
+					background-repeat:no-repeat;
+					background-color:white;
+					width:717px;
+					margin-left:0;
+					float:left;
+					1display:none;
+					
+				}
+			
+					.content p {
+						font-family: Tachoma, "MS Trebuchet", sans-serif;
+						margin:0 40px 20px 10px;
+						padding:10px 10px;
+						color:#fff;
+						background-color:#600;
+						1float:left;
+					}
+					
+					.content h3 {
+						font-family: Tachoma, "MS Trebuchet", sans-serif;
+						margin:0 40px 2px 10px;
+						padding:10px 10px 0 10px;
+						color:#000;
+						
+						size:1.6em;
+					}
+					
+					.content h3 a {
+						font-size: 4em;	
+						}
+					.content a {
+						font-family: Tachoma, "MS Trebuchet", sans-serif;
+						color:#000;
+						
+						}
+						.content a:hover {
+							color:yellow;
+
+							}
+
+/* END OF OVERVIEW */	
+/* FOOTER */
+			#footer {
+			background-color: #000;
+			background-image: url(../images/footer/background.jpg);
+			background-position:0 0;
+			background-repeat: repeat-x;
+			clear:both;
+			float:none;
+			height:80px;
+			padding-top:8px;
+			text-align:center;
+			border-top:1px solid black;
+			}
+				#footer ul li {
+					color:#fff;
+					display:inline;
+					font-family:Cambria,Garamond,Georgia,Times,serif;
+					font-size:12px;
+				}
+/* END OF FOOTER */

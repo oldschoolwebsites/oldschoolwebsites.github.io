@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Exam question issue: Does the foreign key have to be primary key in another table?</title> 
+	<link rel="stylesheet" href="../Stylesheets/reset.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+	<link rel="stylesheet" href="../Stylesheets/base.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+    <link rel="stylesheet" href="../Stylesheets/article.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+ 
+	<script src="../Javascripts/mootools-1.2.1-core-nc.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../Javascripts/mootools-1.2-more.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../Javascripts/mootools-compat-core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../Javascripts/mootools-compat-more.js" type="text/javascript" charset="utf-8"></script> 
+</head>
+
+<body>  
+<div id='page'> 	
+	<div id='header'>
+	<h1>Portfolio<span class='email'>&nbsp;&raquo; B&#97;&#114;&#116;&#111;&#115;&#122;W&#97;&#105;&#115;&#64;&#111;&#116;&#104;&#101;&#114;&#119;&#105;&#46;&#115;&#101;</span>
+	 </h1>
+
+	<div id='navigation'>
+	<ul>
+	<li id='nav_home'><a href='../index.html'>
+		<img class='nav_img' src='../Images/navigation/home.jpg' alt='home button'/>
+		<span class='nav_txt'>Home</span></a>
+	</li>
+	<li id='nav_academic'><a href=''>
+		<img class='nav_img' src='../Images/navigation/academic.jpg' alt='academic achievements button'/>
+		<span class='nav_txt'>Academic Achievements</span></a>
+	</li>
+	<li id='nav_skills'><a href='#in_skills'>
+		<img class='nav_img' src='../Images/navigation/skills.jpg' alt='Skills &amp; Knowledge button' />
+		<span class='nav_txt'>Skills &amp; Knowledge</span></a>
+	</li>
+	<li id='nav_tools'><a href='#in_tools'>
+		<img class='nav_img' src='../Images/navigation/tools.jpg' alt='My toolbox button' />
+		<span class='nav_txt'>My toolbox</span></a>
+	</li>
+    <li id='nav_hobbies'><a href='#in_hobbies'>
+		<img class='nav_img' src='../Images/navigation/hobbies.jpg' alt='iHobbies button' />
+		<span class='nav_txt'>iHobbies</span></a>
+	</li>
+	<li id='nav_q-and-a'><a href='#in_q-and-a'>
+		<img class='nav_img' src='../Images/navigation/q-and-a.jpg' alt='Questions &amp; Answers' />
+		<span class='nav_txt'>Questions &amp; Answers</span></a>
+	</li>
+	</ul>
+	</div>
+	
+	</div>
+	
+	<div id='article'>
+	<h1>Exam question issue: <strong>Does the foreign key have to be primary key in another table?</strong></h1>
+	<p class='date'>September 2008</p>
+
+	<p>When I crossed exam question as faulty <strong>I meant: it can be a candidate key only, without being primary key</strong> (e.g table Users, primary key ID, name(unique value for each field). Wikipedia says:</p>                     
+	
+	<blockquote cite='http://en.wikipedia.org/wiki/Foreign_key'>
+	<p>In the context of <a href='http://en.wikipedia.org/wiki/Relational_database'>relational databases</a>, 
+a foreign key is a <a href='http://en.wikipedia.org/wiki/Referential_integrity'>referential constraint</a> between two tables. 
+The foreign key identifies a column or a set of columns in one (referencing) table that refers to a column or set of columns in another (referenced) table. The columns in the referencing table must be the <a href='http://en.wikipedia.org/wiki/Primary_key'>primary key</a> 
+or other <a href='http://en.wikipedia.org/wiki/Candidate_key'>candidate key</a> in the referenced table. 
+The values in one row of the referencing columns must occur in a single row in the referenced table</p>	
+	</blockquote>
+
+	<p>So I can not agree with teacher saying:</p>
+	
+	<blockquote cite='not very anonymous TAFE teacher'><p>Yes it must, by definition of what a foreign key is.</p></blockquote>
+
+	<h2>Thesis to be proofed</h2>
+	<p>Does the foreign key really have to be primary key in another table?</p>
+
+	<h2>Methodology</h2>
+	<p>I decided to try in practice the case when Foreign Key is not be a primary key in another table</p>
+	<p>I have used:</p>
+	<ul>
+		<li><p>Mac OS X Leopard platform</p></li>
+		<li><p>phpMyAdmin 2.10.2</p></li>
+		<li><p>MySQL 5.0.41</p></li>
+	</ul>
+	
+	<h2>Test</h2>
+	
+	<ol>
+	<li><p>I have created on my localhost database with two tables:</p>
+		<ul>
+		<li><p>customer with <strong>id(int(11)) as PRIMARY KEY</strong> and <strong>customer_id(VARCHAR(30)) as UNIQUE KEY</strong></p></li>
+		<li><p>customer_sales with <strong>customer_id(VARCHAR(30)) set as FOREIGN KEY REFFERENCE</strong></p></li>
+		</ul>
+		<pre><code>
+CREATE TABLE `customer` (
+	`id` int(11) NOT NULL auto_increment,
+	`customer_id` varchar(30) NOT NULL,
+	`name` varchar(30) default NULL,
+	PRIMARY KEY  (`id`),
+	UNIQUE KEY `customer_id` (`customer_id`)
+) 
+ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+CREATE TABLE customer_sales (
+	transaction_id INT NOT NULL,
+    amount        INT,
+	customer_id  VARCHAR(30) NOT NULL,
+	PRIMARY KEY(transaction_id),
+	INDEX (customer_id),
+	FOREIGN KEY (customer_id) REFERENCES customer (customer_id)
+)
+ TYPE = INNODB;
+		</code></pre>
+	</li>
+	<li><p>I have added two sample entries into customer table:</p>
+		<pre><code>
+INSERT INTO customer VALUES(1,'I_AM_UNIQUE','First Customer'),(2,'I_AM_UNIQUE_2','Second Customer');
+		</code></pre>
+	</li>
+	<li><p>Than, I added sample values into customer_sales table:</p>
+		<pre><code>
+INSERT INTO customer_sales VALUES(1,55,'I_AM_UNIQUE'),(2,95,'I_AM_UNIQUE_2');
+		</code></pre>
+	</li>
+	<li><p>To test connections between tables I have tried to insert new entry into customer_sales table with not existing customer_id refference.<strong>The result received was an error message</strong></p>
+		<pre><code>
+INSERT INTO customer_sales VALUES(3,55,'I_AM_UNIQUE_ONLY');
+		</code></pre>
+	</li>
+	<li><p>Than I created 3rd unique customer in customers table</p>
+		<pre><code>
+INSERT INTO customer VALUES(3,'I_AM_UNIQUE_ONLY','TEST Customer');
+		</code></pre>
+	</li>
+	<li><p>As I created successfully customer with customer_id: I_AM_UNIQUE_ONLY, I have repeated step 4. <strong>That time it was successfully created.</strong></p>
+		<pre><code>
+INSERT INTO customer_sales VALUES(3,55,'I_AM_UNIQUE_ONLY');
+		</code></pre>
+	</li>                                                          
+	</ol>
+
+	<h2>Test's Results Findings</h2>
+	<p>Foreign key is working even when it is associated NOT with the primary(id) but UNIQUE(customer_id) key in another table.</p>
+
+	<h2>Limitations</h2>
+	<p>As I mentioned on the beginning I have tested it only on one computer with specific software versions, there might be some SQL implementations that does not allow for using composite key as Foreign key reference.</p>
+
+	<h2>My Opinion</h2>
+	<blockquote><p>Does the foreign key have to be primary key in another table?</p>
+		<p><strong>No, it doesn't. It is enough to be unique.</strong></p></blockquote>   
+	
+	<p>More than that in my opinion: ability of using composite key in some cases can have very practical, positive implications, e.g performance gain or as just a more flexible shortcut.</p>
+
+	<h2>Academic References</h2>
+	<ul>
+	<li><p>Head First SQL: Your Brain on SQL -- A Learner's Guide</p>
+		<ul>
+		<li><p>By Lynn Beighley</p></li>
+		<li><p>Published by O'Reilly, 2007</p></li>
+		<li><p>ISBN 0596526849, 9780596526849</p></li>
+		<li><p><strong>On the page 305 they seem to agree with me</strong></p></li>
+	</ul>
+	</li>
+	</ul>
+	</div>
+	<div id='footer'>
+	<ul>
+		<li>copyleft Brisbane 2008-2009</li>
+		<li>and last updated in March 2009</li>
+		<li>by Bartosz Wais</li>
+	</ul>
+</div>
+</div>
+<script src="../Javascripts/starter_header.js" type="text/javascript" charset="utf-8"></script>   
+</body>
+</html>

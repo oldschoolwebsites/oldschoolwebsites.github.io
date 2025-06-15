@@ -1,0 +1,156 @@
+= '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">'
+%html{ :'xml:lang' =>'en', :xmlns => 'http://www.w3.org/1999/xhtml'}
+  %head
+    %title Bartosz Wais &raquo; Portfolio &raquo; homepage
+    %link{ :charset => 'utf-8', :href => 'stylesheets/reset.css', :rel => 'stylesheet', :type => 'text/css'}
+    %link{ :charset => 'utf-8', :href => 'stylesheets/base.css', :rel => 'stylesheet', :type => 'text/css'}
+    %script{ :src => 'javascripts/mootools-1.2.1-core-nc.js', :type => 'text/javascript', :charset => 'utf-8'}
+    %script{ :src => 'javascripts/mootools-compact-core.js', :type => 'text/javascript', :charset => 'utf-8'}
+    %script{ :src => 'javascripts/mootools-compact-more.js', :type => 'text/javascript', :charset => 'utf-8'}
+  %body
+    #page
+      #header
+        %h1 
+          Portfolio
+          %span.email &nbsp;&raquo; B&#97;&#114;&#116;&#111;&#115;&#122;W&#97;&#105;&#115;&#64;&#111;&#116;&#104;&#101;&#114;&#119;&#105;&#46;&#115;&#101;
+        #navigation
+          %ul
+            %li#nav_home
+              %a{ :href => '#'}
+                %img.nav_img{ :src => './images/navigation/home.jpg', :alt => 'home button'}
+                %span.nav_txt Home
+            %li#nav_academic
+              %a{ :href => '#'}
+                %img.nav_img{ :src => './images/navigation/academic.jpg', :alt => 'academic achivements button'}
+                %span.nav_txt Academic Achievements
+            %li#nav_skills
+              %a{ :href => '#'}
+                %img.nav_img{ :src => './images/navigation/skills.jpg', :alt => 'Skills &amp; Knowledge button'}
+                %span.nav_txt Skills &amp; Knowledge
+            %li#nav_tools
+              %a{ :href => '#'}
+                %img.nav_img{ :src => './images/navigation/tools.jpg', :alt => 'My Toolbox button'}
+                %span.nav_txt My Toolbox
+            %li#nav_hobbies
+              %a{ :href => '#'}
+                %img.nav_img{ :src => './images/navigation/hobbies.jpg', :alt => 'iHobbies button'}
+                %span.nav_txt iHobbies
+            %li#nav_q-and-a
+              %a{ :href => '#'}
+                %img.nav_img{ :src => './images/navigation/q-and-a.jpg', :alt => 'Questions and Answers'}
+                %span.nav_txt Questions &amp; Answers
+	
+      #articles_wrapper
+        #article_1
+          %img{ :src => './images/articles/03-2009-foreign-key/mysql_logo_1.gif',  :alt => 'MySQL logo' }
+          %h3.publication_date March, 2009
+          %h3.title
+            %a{ :href => '#'} Does the foreign key have to be primary key in another table?
+            %p 
+              Exam question issue: Does the foreign key have to be primary key in another table?
+              When I crossed exam question as faulty I meant: it can be a candidate key only,
+              without being primary key. Here I have a chance to proof it.
+                
+        #article_2
+          %img{ :src => './images/articles/08-2008-ruby/ruby.gif', :width =>'331', :height => '119', :alt => 'Ruby'} 
+          %h3.publication_date September, 2008
+          %h3.title 
+            %a{ :href => '#'} Using reflection in Ruby, reedited from net
+            %p
+              Reflection in Ruby is a great way of doing the things at 
+              runtime. Sometimes you need to create an instance of class
+              depending upon the parameter passed to a function and this 
+              parameter could be the name of the class to be created.
+
+      #subpages_wrapper
+        #academic
+          .overview
+            %h2
+              %a{ :name => 'in_academic'} Academic Achievements
+            %ul
+              %li Diploma of Web Development
+              %li BA(Hons) Business, E-commerce
+              %li and more
+          .content
+            %h3 
+              %a{ :name => 'in_academic'} Veni, Vidi, Vici
+            %p
+              Yes, it looks very empty here, not because I have no education at all
+              but writing about education is not the most exciting thing for me.
+            
+            %p 
+              Anyway if you really want to look on it click
+              %a{ :href => 'http://otherwi.se/cv/BartoszWaisCV.pdf'} here
+              for my on-line Resume
+              or/and ask me a question  
+              %a{ :href => '#'} here 
+              = '.'
+        #skills
+          .overview
+            %h2 Skills &amp; Knowledge
+            %ul
+              %li Solid knowledge of XHTML and CSS
+              %li Good understanding of Object Oriented software design
+              %li and more
+                                
+          .content
+            %h3
+              %a{ :name => 'in_skills'}
+              Opening umbrella in one's ...
+            %p 
+              Reflection in Ruby is a great way of doing the things at 
+              runtime. Sometimes you need to create an instance of class
+              depending upon the parameter passed to a function and this 
+              parameter could be the name of the class to be created.
+                
+        #tools
+          .overview
+            %h2 My toolbox
+            %ul
+              %li Semantic XHTML (strict doctype) and CSS
+              %li JavaScript( jQuery, Prototype, MooTools ..)
+              %li Ruby, PHP
+                                
+          .content
+            %h3
+              %a{ :name => 'in_tools'}
+              the law of the instrument, Maslow's hammer
+            %p 
+              When the only tool you have is a hammer, it is tempting to treat everything as if it were a nail
+        #hobbies
+          .overview
+            %h2 iHobbies
+            %ul
+              %li Surfing, Snowboarding
+              %li Books and Movies 
+              %li Travels
+          .content
+            %h3
+              %a{ :name => 'in_hobbies'}
+            %p 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            %p 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+        #q-and-a
+          .overview
+            %h2 Questions &amp; Answers
+            %ul
+              %li Solid knowledge of XHTML and CSS
+              %li Good understanding of Object Oriented software design
+              %li and more
+          .content
+            %h3
+              %a{ :name => 'in_q-and-a'}
+            %p 
+              Reflection in Ruby is a great way of doing the things at 
+              runtime. Sometimes you need to create an instance of class
+              depending upon the parameter passed to a function and this 
+              parameter could be the name of the class to be created.
+      #footer
+        %ul
+          %li copyleft Brisbane 2008-2009
+          %li and last updated in October 2009
+          %li by Bartosz Wais
+
+    %script{ :src => 'javascripts/starter.js', :type => 'text/javascript', :charset => 'utf-8'}

@@ -1,0 +1,72 @@
+	#login_status{
+			background-image: none;
+		
+			background-color: white;
+			background-repeat: no-repeat;
+			margin:0 10px 10px 10px;
+			padding:10px;
+			1border: 1px dotted #ddd;
+			text-align:right;
+			height: 280px;
+		}
+			#login_status div{width:200px;
+				background-image: none;
+				background-color:white;
+				border: 1px dotted #ddd;
+				text-align:center;
+				1height:190px;
+				margin:5px;
+				float:left;
+				padding-bottom:10px;
+			}
+	
+				#login_status div a{color: #666;
+					font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
+					font-style: italic;
+					font-weight: normal;
+					line-height:1.2em;
+					text-decoration:none;
+				}
+					#login_status div a:hover{border-bottom:2px solid orange;}
+				
+				#login_status img{
+					
+					background-color: black;
+					background-repeat: no-repeat;
+					padding:15px 30px;
+					border: 1px solid #ddd;
+					text-align:center;
+				}
+				
+			#features ol{
+				float:left;
+				border:1px solid #ADDDE6;
+				margin-right:5px;
+				background-color: #E3F0F2;
+				width:150px;
+			}
+			
+			#features ol li{ padding:5px;list-style: square inside;}
+	
+				#features #action {
+					float:right;
+					border: 3px solid green;
+					padding: 10px;
+					background-color: #FFFFCC;
+					width:300px;
+					height:300px;
+				}
+
+			
+			#mail_commands, #clients_commands, #info_commands, #publish_commands, #ask_commands, #help_commands
+			{display:none;
+
+			}
+
+
+		#mail_commands li, #clients_commands li, #info_commands li, #publish_commands li, #ask_commands li, #help_commands li{
+			background-color:#F8F7F3;
+			padding:5px;
+			margin-top:2px;
+		}	
+	

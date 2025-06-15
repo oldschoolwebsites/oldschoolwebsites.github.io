@@ -1,0 +1,59 @@
+html {overflow:auto;height:1000px;}
+body{color:#444751;}
+
+strong {font-weight:bold;}
+#header {background-color:#2b2b2b;width:100%;}
+#header ol{padding:20px 30px;}
+#header ol li {display:inline;}
+#header ol li#contact {padding-left:532px;}
+#header ol li#contact a{color:#d9d9cd;font-size:0.9em;text-decoration:none;border-bottom:1px dotted #d9d9cd;}
+
+#page {width:880px;padding-left:20px;}
+
+#page #navigation {background-color:#CD2800;height:30px;padding-top:5px;margin-bottom:10px;}
+#page #navigation ol li {display:inline;padding-left:10px;font-size:1.2em;font-family:Helvetica,Arial,sans-serif;}
+#page #navigation ol li a{color:#fcfcfc;text-decoration:none;line-height:1.5em;}
+#page #navigation ol li a:hover{text-decoration:none;border-bottom:2px dotted #fcfcfc;}   
+
+#page h1{font-family:Helvetica,Arial,Sans-serif;font-weight:bold;font-size:1.2em;color:#2a2b2d;line-height:1.5;padding-top:10px;border-top:1px solid #B1B2B9;margin-bottom:10px;}  
+
+#page #focus {border:1px solid #B1B2B9;background-color:#EBEBEB;padding:10px;height:200px;margin-bottom:10px;}
+#page #focus img {float:left;border:1px solid #B1B2B9;background-color:#444751;padding:5px;}
+#page #focus p {float:right;width:333px;padding:23px 10px;background-color:#E1E1E1;margin-bottom:10px;border:1px solid #B1B2B9;}
+
+#page #projects {border:1px solid #B1B2B9;background-color:#EBEBEB;padding:10px;height:700px;margin-bottom:10px;}
+#page #projects .highlighted {float:left;width:210px;height:316px;text-align:center;margin-right:10px;border:1px solid #B1B2B9;padding:5px;background-color:#E1E1E1;margin-bottom:10px;}
+#page #projects .highlighted img {border:1px solid #B1B2B9;background-color:#444751;padding:5px;}     
+#page #projects .highlighted h1 {font-size:0.8em;}
+
+#page #projects .highlighted p {background-color:#EBEBEB;text-align:left;color:#444751;font-family:Georgia,"Times New Roman",Times,serif;font-size:0.8em;line-height:1.5em;border:1px solid #B1B2B9;padding:10px;margin-bottom:10px;height:80px;}  
+#page #projects .highlighted a:link,#page #projects .highlighted a:visited {background-color:#CD2800;padding:5px 30px;border:1px solid #B1B2B9;color:#fcfcfc;}
+#page #projects .highlighted a:hover{background-color:#ffd209;color:#000;text-decoration:none;}
+
+#page #projects #shortcuts {float:right;height:319px;padding-top:6px;padding-bottom:0px;margin-bottom:10px;overflow:hidden;border-bottom:4px double #B1B2B9;}                  
+#page #projects #shortcuts a img{height:93px;}
+#page #projects #shortcuts a:link,#page #projects #shortcuts a:visited{float:left;height:93px;border: 2px solid #EBEBEB;margin-bottom:3px;} 
+#page #projects #shortcuts a:hover{border: 2px solid #CD2800;}                  
+#page #projects #shortcuts h1{float:none;clear:both;text-align:center;}
+#page #projects #shortcuts ul{float:none;line-height:1.2em;border:1px solid #B1B2B9;padding:5px;background-color:#E1E1E1;padding-bottom:18px;height:140px;margin:0 5px;}
+#page #projects #shortcuts ul li{list-style-position: inside;list-style-image: url("../images/list_decoration.gif")}
+#page #projects #shortcuts ul li a:link,#page #projects #shortcuts ul li a:visited{color:#009933;border-bottom:1px dotted #75C28F;text-decoration:none;border:none;height:10px;float:none;}
+#page #projects #shortcuts ul li a:hover{background-color:#2A9347;border-bottom-style:none;color:#EBEBEB;text-decoration:none;}
+
+#page #projects #events_calendar{clear:left;float:left;border:1px solid #B1B2B9;padding:5px;text-align:center;width:442px;height:350px;}
+#page #projects #events_calendar h1,#page #projects #events_calendar .event{text-align:left;}
+#page #projects #events_calendar img {border:1px solid #B1B2B9;background-color:#444751;padding:5px;}
+#page #projects #events_calendar .event{padding-bottom:20px;}
+#page #projects #events_calendar .event h2{font-family:Helvetica,Arial,Sans-serif;font-weight:bold;color:#2A2B2D;}  
+#page #projects #events_calendar .event ul li {line-height:1.5em;color:#444751;font-family:Georgia,"Times New Roman",Times,serif;font-size:0.7em;padding-right:20px;}
+#page #projects #events_calendar .event p.date {color:#980905;}
+
+#page #projects #opinions {float:right;width:395px;height:357px;border-bottom:4px double #B1B2B9;}
+#page #projects #opinions .opinion {background-color:#F9D9D8;border-top:1px solid #B1B2B9;border-bottom:1px solid #B1B2B9;padding:30px 20px;margin-bottom:10px;background-image:url("../images/quote.gif");background-repeat:no-repeat;height:100px;overflow:auto;}
+#page #projects #opinions .opinion p{font-style:italic;color:#2a2b2d;}
+#page #projects #opinions .opinion p.author{font-family:Helvetica,Arial,Sans-serif;font-weight:bold;}
+
+#footer  {background-color:#2b2b2b;width:100%;}    
+#footer ul{padding:20px 30px;}
+#footer ul li{display:inline;color:#d9d9cd;font-size:0.9em;} 
+#footer ul li a{color:#d9d9cd;font-size:0.9em;text-decoration:none;border-bottom:1px dotted #d9d9cd;}   

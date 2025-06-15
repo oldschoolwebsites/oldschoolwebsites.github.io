@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>book_example</title>
+<script src="../Javascripts/mootools-1.2.1-core-nc.js" type="text/javascript" charset="utf-8"></script>
+<script src="../Javascripts/mootools-1.2-more.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/JavaScript"> 
+var Tabs = new Class({ 
+	Implements: Options, 
+	options: { 
+		selectedTabCssClass: 'selected', 
+		selectedSectionCssClass: 'selected', 
+		firstShow: 0 
+	}, 
+	tabs: [], 
+	initialize: function(containers, tabs, options){ 
+		this.setOptions(options); 
+		containers = $$(containers); 
+		$$(tabs).each(function(tab, index){ 
+			this.addSection(tab, containers[index]); 
+		}, this); 
+		this.show(this.options.firstShow); 
+	},
+	addSection: function(tab, container) { 
+		this.tabs.include(tab); 
+		tab.store('container', container); 
+		this.attach(tab); 
+	},
+	attach: function(tab){ 
+		tab.addEvent('click', function(event){ 
+			event.preventDefault(); 
+			this.show(this.tabs.indexOf(tab)); 
+		}.bind(this)); 
+	},
+	show: function(index){ 
+		if (this.current === index) return; 
+		
+		this.tabs.each(function(tab, i){ 
+			var container = tab.retrieve('container'); //If we're showing the tab, add the CSS classes, else remove them 
+			if (index === i) { 
+				tab.addClass(this.options.selectedTabCssClass); 
+				container.addClass(this.options.selectedSectionCssClass); 
+				container.setStyle('display', 'block'); 
+			}
+			else { 
+				tab.removeClass(this.options.selectedTabCssClass); 
+				container.removeClass(this.options.selectedSectionCssClass); 
+				container.setStyle('display', 'none'); 
+			} 
+	    }, this); //Now we're using 'this' inside this funciton, so we must specify a binding  
+	              //here to keep 'this' pointed to our instance. 
+		this.current = index; 
+	} 
+});
+
+window.addEvent('domready', function(){ 
+	new Tabs($$('#tabContainers div.container'), 
+		$$('#tabs li'), { 
+			selectedTabCssClass: "selectedTab", 
+			selectedSectionCSSClass: "selectedSection", 
+			firstShow: 2 
+		}
+	); 
+}); 
+</script> 
+	
+</head>
+
+<body>
+	<ul id="tabs"> 
+	  <li>Tab 1</li> 
+	  <li>Tab 2</li> 
+	  <li>Tab 3</li>
+	 <li>Tab 4</li>  
+	</li> 
+	<div id="tabContainers"> 
+	  <div class="container">This is the content 
+	   for the first tab.</div> 
+	  <div class="container">This is the content 
+	   for the second tab.</div> 
+	  <div class="container">This is the content 
+	   for the third tab.</div> 
+	  <div class="container">This is the content 
+	   for the fourth tab.</div> 
+	</div></body>
+</html>

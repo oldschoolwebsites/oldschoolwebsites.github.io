@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>book_example</title>
+<script src="../Javascripts/mootools-1.2.1-core-nc.js" type="text/javascript" charset="utf-8"></script>
+<script src="../Javascripts/mootools-1.2-more.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/JavaScript"> 
+/**
+ 
+ * Add events to buttons. 
+	Clicking a button will hide all panels before showing the panel corresponding to that button
+ 
+ */
+ 
+var ChainExample = new Class({
+ 
+    Implements: Chain,
+ 	initialize: function(){
+	this.callChain();	
+	this.items.each(function(value, key){alert(value + key +this.wtf);this.callChain();}, this);
+	},
+    items: new Hash({'one': 1, 'two': 2}),
+	wtf: 'blah',
+	chain: function(){}
+ 
+});
+
+
+var Widget = new Class({ 
+	Implements: [Chain], 
+	someMethod: function(){ 
+		this.callChain(); 
+	
+	}
+//	test: function(){alert('chuj')}
+}); 
+
+//Widget.test.chain(function(){alert('this comes next!');}); 
+// Widget.someMethod(); 
+//Alerts the message when someMethod finishes 
+
+window.addEvent('domready',
+ 
+    function()
+ 
+    {
+ 
+var myChain = new Widget();
+myChain.chain(
+	function(){alert('this comes next!');this.callChain();},
+	function(){alert('and this !');}
+	); 
+myChain.someMethod(); 
+    }
+ 
+);
+
+
+</script> 
+	
+</head>
+
+<body>
+	<ul id="pageLinks"> 
+	      <li><a href="page1.html">page 1</a></li> 
+	      <li><a href="page2.html">page 2</a></li> 
+	      <li><a href="page3.html">page 3</a></li> 
+	      <li><a href="page4.html">page 4</a></li> 
+	    </ul> 
+	    <div id="pageContainer"></div> 
+
+
+</body>
+</html>

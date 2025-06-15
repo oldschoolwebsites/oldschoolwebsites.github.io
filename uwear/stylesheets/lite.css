@@ -1,0 +1,112 @@
+#page {
+  width: 960px;
+  margin-left: 0;
+  margin-right: auto;
+  font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif; }
+  #page #navigation {
+    background-color: #898989;
+    color: white;
+    height: 33px;
+    font-variant: small-caps;
+    font-size: 0.86em;
+    margin-bottom: 10px;
+    position: fixed;
+    z-index: 3;
+    width: 950px; }
+    #page #navigation ol li, #page #navigation ol {
+      display: inline;
+      padding-bottom: 12px;
+      height: 33px; }
+      #page #navigation ol li a, #page #navigation ol a {
+        color: white; }
+        #page #navigation ol li a:hover, #page #navigation ol a:hover {
+          color: yellow; }
+    #page #navigation .category {
+      background-color: #C27070;
+      padding-left: 5px;
+      padding-right: 15px;
+      font-size: 1.2em; }
+    #page #navigation li.info {
+      background-color: green;
+      margin-left: 25px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 1.2em; }
+      #page #navigation li.info a {
+        font-weight: bold; }
+    #page #navigation form {
+      margin-right: 0px;
+      float: right; }
+      #page #navigation form #cart {
+        height: 33px; }
+  #page #catalog {
+    padding-top: 40px; }
+  #page .product {
+    clear: both; }
+    #page .product .images {
+      float: left;
+      height: 304px; }
+    #page .product p.price {
+      color: white;
+      padding: 5px;
+      margin-top: -280px;
+      margin-right: 25px;
+      height: 28px;
+      width: 85px;
+      position: absolute;
+      z-index: 2;
+      background-color: red;
+      text-align: center;
+      vertical-align: top;
+      left: 0; }
+    #page .product .buy_now {
+      z-index: 2;
+      position: absolute;
+      left: 0;
+      margin-top: -240px;
+      margin-left: -2px; }
+    #page .product .description {
+      float: left;
+      width: 205px;
+      overflow: auto;
+      padding-left: 5px;
+      border-top: 3px double #C27070; }
+      #page .product .description ul {
+        border-top: 1px dashed black;
+        margin-top: 15px;
+        padding-top: 3px; }
+        #page .product .description ul li {
+          padding-bottom: 3px; }
+      #page .product .description h3 {
+        color: white;
+        background-color: black;
+        padding-left: 5px;
+        padding-right: 5px; }
+      #page .product .description p {
+        color: #333333;
+        font-size: 12px;
+        line-height: 1.2; }
+        #page .product .description p span {
+          font-weight: bold; }
+  #page .notice {
+    border: 15px solid green;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    text-align: center;
+    line-height: 1.3em; }
+  #page #welcome {
+    position: absolute;
+    top: 60px;
+    left: 270px;
+    width: 300px;
+    z-index: 3;
+    background-color: white;
+    border: 15px solid green;
+    padding: 20px 30px; }
+    #page #welcome p {
+      line-height: 1.3em;
+      padding-bottom: 15px; }
+      #page #welcome p span {
+        font-weight: bold; }

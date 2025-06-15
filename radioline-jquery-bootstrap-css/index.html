@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Weather Forecast</title>
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <a href="#" id='play'><span class="play">play radio</span><span class="pause">pause</span></a>
+
+        <img src="radiozet.png" alt="Radio Zet" />
+        <section id="forecast">
+        <ol>
+            <li id='day_1'>
+                    <p class='date'></p>
+                    <p class='description'></p>
+            </li>
+            <li id='day_2'>
+                    <p class='date'></p>
+                    <p class='description'></p>
+            </li>
+            <li id='day_3'>
+                    <p class='date'></p>
+                    <p class='description'></p>
+            </li>
+            <li id='day_4'>
+                    <p class='date'></p>
+                    <p class='description'></p>
+            </li>
+        </ol></section>
+        <script type="text/javascript" src="radio.js"></script>
+        <script type="text/javascript" src="forecast-jquery.js"></script>
+        <script type="text/javascript" src="zenscroll.js"></script>
+        <script type="text/javascript" src="carousel.js"></script>
+    </body>
+    </html>
