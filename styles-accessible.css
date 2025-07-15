@@ -1,0 +1,117 @@
+/* Reset basics – assumed already handled in reset.css */
+
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 1rem;
+    background: #fff;
+    color: #111;
+}
+
+header[role="banner"] {
+    padding: 2rem 0;
+    border-bottom: 2px solid #eee;
+    text-align: center;
+}
+
+header[role="banner"] h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+header[role="banner"] a {
+    font-size: 1rem;
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.25rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 1.5rem 0 0.5rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin: 1rem 0 0.25rem;
+}
+
+ul, ol {
+    margin: 0 0 1.5rem 1rem;
+    padding: 0;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin: 0.3rem 0 1rem;
+    max-width: 700px;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
+a:focus {
+    background: #fffae6;
+    border-radius: 3px;
+}
+
+code {
+    background: #f4f4f4;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+/* Optional: visually separate articles */
+article {
+    padding: 1rem 0;
+    border-top: 1px solid #eaeaea;
+}
+
+/* Mobile-first responsiveness */
+@media (max-width: 600px) {
+    header[role="banner"] h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    body {
+        padding: 0 0.5rem;
+    }
+}
