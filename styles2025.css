@@ -15,7 +15,14 @@ h1 {
   font-size: 2rem;
   line-height: 2rem;
   color: #fefefe;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center;
+}
+  h1 strong {
+    display: block;
+    color: black;
+    padding-bottom: 0.5em;
+  }
 
 a {
   -webkit-transition: 1s;
