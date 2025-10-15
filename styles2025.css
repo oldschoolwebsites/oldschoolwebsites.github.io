@@ -31,8 +31,8 @@ a[href$='pdf'] {
   border-bottom: 1px dashed; }
 
 a[href$='pdf']:hover {
-  color: #fffffe;
-  border-bottom: 1px solid #fffffe; }
+  color: #870813ff;
+  border-bottom: 1px solid #870813ff; }
 
 li > h2, ul > h2 {
   font-weight: bold; }
