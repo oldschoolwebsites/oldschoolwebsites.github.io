@@ -108,5 +108,9 @@ ul {
   z-index: 1000;
 }
 
+#seo-services a[href$='pdf'] {
+  font-weight: bold;
+}
+
 
 /*# sourceMappingURL=styles_new.css.map */
