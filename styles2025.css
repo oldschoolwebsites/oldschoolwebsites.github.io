@@ -111,6 +111,10 @@ ul {
 padding-right: 7rem;
 }
 
+#seo-services li p {
+  padding-bottom: 1rem;
+}
+
 #seo-services a[href$='pdf'] {
   font-weight: bold;
 }
