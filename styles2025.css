@@ -81,7 +81,7 @@ article {
       article > header, article > ul {
         flex-basis: calc(50%); } }
   article header {
-    font-style: italic; }
+    // font-style: italic; }
 
 ul {
   padding: 0;
