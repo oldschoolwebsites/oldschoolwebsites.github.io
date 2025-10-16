@@ -107,6 +107,9 @@ ul {
   color: #000;
   z-index: 1000;
 }
+#seo-services li {
+padding-right: 7rem;
+}
 
 #seo-services a[href$='pdf'] {
   font-weight: bold;
