@@ -130,9 +130,11 @@ padding-right: 7rem;
 }
 
 #seo-services h5 {
-  font-weight: bold;
-  margin-top:2rem;
-  padding-right: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=styles_new.css.map */
