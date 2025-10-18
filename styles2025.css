@@ -114,7 +114,13 @@ padding-right: 7rem;
 #seo-services li p {
   padding-bottom: 1rem;
 }
-
+#seo-services p {
+      margin-bottom: 1rem;
+      padding-right: 4rem;
+}
+#seo-services p strong{
+      font-weight: bold;
+}
 #seo-services a[href$='pdf'] {
   font-weight: bold;
 }
@@ -125,7 +131,8 @@ padding-right: 7rem;
 
 #seo-services h5 {
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top:2rem;
+  padding-right: 2rem;
 }
 
 /*# sourceMappingURL=styles_new.css.map */
