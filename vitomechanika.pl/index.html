@@ -47,6 +47,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+        html {
+            scroll-behavior: smooth;
+        }
         header {
             background-image: url(images/vitomechanika.webp);
             max-width: 100%;
@@ -55,6 +59,15 @@ table {
             height: 90vh;
             background-position: 0 95px;
             background-color: black;
+            
+
+            h2,p, a {
+                text-align: center;
+                color:white;
+                display: block;
+                text-transform: uppercase;
+                
+            }
         }
         h1 {
             color: white;
@@ -69,6 +82,48 @@ table {
             font-family: monospace;
             padding: 0 2rem;
         }
+        section {
+ 
+            margin-top: 22vh;
+            text-align:center;
+                
+            h2 {
+                font-weight: bold;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 48px;
+                -webkit-text-stroke: 1.3pt black
+            }
+            
+            p {
+                padding: 5px 10px;
+                font-weight: bold;
+            
+                width: 400px;
+                margin: 10px auto 10px;
+                opacity: 0.7;
+                background-color: black;
+            };
+            a {
+                background-color: rgb(0, 131, 144);;
+                width:200px;
+                margin:0 auto;
+                padding:10px 20px;
+                text-decoration: none;
+            }
+ 
+ 
+        }
+        h2 {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 2rem 0 1rem 0;
+            padding: 0 2rem;
+        }
+        p {
+            padding: 1rem 2rem;
+            font-size: 18px;
+            line-height: 1.6;   
+        }
     </style>
     <title>STACJA KONTROLI POJAZDÓW VITO </title>
 </head>
@@ -82,6 +137,11 @@ table {
             TEL. 122647017 
             CZYNNE OD 8-19
         </address>
+        <section>
+            <h2>Witamy w Vito Mechanika.</h2>
+            <p>STACJA KONTROLI POJAZDÓW OD 2015.</p>
+            <a href="#mapa">Umów Wizyte</a>
+        </section>
     </header>
     <p>W pobliżu giełdy Rybitwy w Krakowie znajduje się rodzinna firma, Stacja Kontroli Pojazdów Vito. Czynna 6 dni w tygodniu. Wykonujemy przeglądy rejestracyjne, geometrie oraz ozonowanie. Zapraszamy klientów z Krakowa i okolic.</p>
     <p>Zapewniamy najwyższą jakość sprzętu, oraz dbałośc o komfort Klienta. W poczekalni można zobaczyć jak jest prowadzony przegląd przy darmowej kawie w dobrej i miłej atmosferze. </p>
@@ -98,7 +158,7 @@ table {
     <h2>STACJA KONTROLI POJAZDÓW OD 2015.</h2>
     <p>(WKLEIĆ ZDJĘC IE MASZYN TRZEBA WAISIK) Diagnostyka samochodów Kraków. Jakość gwarantuje wyposażenie MAHA. -sprzęt najwyższej klasy. </p>
  
-    <h2>MECHANKA SAMOCHODOWA POJAZDÓW DO 3.50T, TAKŻE BUSÓW. DIAGNOSTYKA I SPECJALISTYCZNY SERWIS. CZYNNE OD 9-17</h2>
+    <h2>MECHANKA SAMOCHODOWA POJAZDÓW DO 3.5T, TAKŻE BUSÓW. DIAGNOSTYKA I SPECJALISTYCZNY SERWIS. CZYNNE OD 9-17</h2>
     <p>Mechanika i elektromechanika, odpowiedni dobór części i profesjonalna obsługa.</p>
     <ul>
         <li>serwis hamulcowy</li>
@@ -132,7 +192,7 @@ table {
         <li>Naprawiamy przebite opony</li>
     </ul>
     <p>SZYBKI DOJAZD W OBRĘBIE KRAKOWA</p>
-            <div class="map-container">
+            <div id="mapa"class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.85453085458!2d20.045732900000004!3d50.0444338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471644596560ca87%3A0xb71009efea7ca147!2sVehicle%20Inspection%20Station%20Vito!5e1!3m2!1sen!2spl!4v1764593354782!5m2!1sen!2spl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 </body>
