@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <style>
         html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -51,14 +54,18 @@ table {
         html {
             scroll-behavior: smooth;
         }
+
+        body {
+            background-color: rgb(22, 22, 22)
+        }
         header {
             background-image: url(images/vitomechanika.webp);
             max-width: 100%;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 90vh;
-            background-position: 0 140px;
-            background-color: black;
+            height: 100vh;
+            background-position: 0 150px;
+            background-color: rgb(22, 22, 22);
             
 
             h2,p, a {
@@ -68,12 +75,16 @@ table {
                 text-transform: uppercase;
                 
             }
+            section {
+                margin-top: 22vh;
+            }
         }
         h1 {
             color: white;
             text-align: center;
             font-size: 36px;
             font-weight: bold;
+            font-family: 'Archivo Black', arial, sans-serif;
             strong {
                 color: white;
                 background-color: red;
@@ -88,19 +99,17 @@ table {
             color: gold;
             font-family: monospace;
             padding: 2rem 0 1rem 0;
-            background-color: black;
+            background-color: rgb(22, 22, 22);
             font-size: 24px;
         }
         section {
- 
-            margin-top: 22vh;
             text-align:center;
                 
             h2 {
                 font-weight: bold;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 48px;
-                -webkit-text-stroke: 1.3pt black
+                font-family: 'Archivo Black', arial, sans-serif;
+                font-size: 56px;
+                -webkit-text-stroke: .3pt rgb(22, 22, 22);
             }
             
             p {
@@ -110,7 +119,7 @@ table {
                 width: 360px;
                 margin: 10px auto 10px;
                 opacity: 0.7;
-                background-color: black;
+                background-color: rgb(22, 22, 22);
             };
             a {
                 background-color: rgb(0, 131, 144);;
@@ -122,19 +131,73 @@ table {
  
  
         }
-        h2 {
-            font-size: 28px;
-            font-weight: bold;
+
+        h2, h3 {
             margin: 2rem 0 1rem 0;
             padding: 0 2rem;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 42px;
+            font-weight: bold;
+            font-family: 'Archivo Black', arial, sans-serif;
+            margin-bottom: 40px;
+            padding: 0 2rem;
+            text-align: center;
+            color:rgb(0, 131, 144);
+            display:block;
+        }
+        h3 {
+            color:rgb(247, 247, 247);
+            font-size: 24px;
+            text-transform: uppercase;
+            clear: both;
+
         }
         p {
             padding: 1rem 2rem;
             font-size: 18px;
             line-height: 1.6;   
+            color:rgb(164, 164, 164);
+            text-align: center;
+        }
+        li {
+            color:rgb(164, 164, 164);
+            padding: 0.5rem 2rem;
+        }
+
+        h2 + img {
+            width: 600px;
+            float: left;
+            margin: 2rem;
+        }
+        #o-nas, #cennik, #stacja-kontroli {
+            display: flex;
+            justify-content: center; /* aligns the items horizontally */
+            align-items: center; /* aligns the items vertically */
+            margin-top: 6rem;
+        
+            img {
+                width: 600px;
+                //margin: 2rem;
+            }
+            div {
+                max-width: 400px;
+            }
+        }
+        #o-nas {
+            margin:0;
+        }
+        @media (max-width: 1103px) {
+            #o-nas, #cennik, #stacja-kontroli {
+                display:block;
+                div {
+                    margin: 0 auto;
+                }
+            }
         }
     </style>
-    <title>STACJA KONTROLI POJAZDÓW VITO </title>
+    <title>STACJA KONTROLI POJAZDÓW VITO</title>
 </head>
 <body>
     <header>
@@ -151,57 +214,75 @@ table {
             <a href="#mapa">Umów Wizyte</a>
         </section>
     </header>
-    <p>W pobliżu giełdy Rybitwy w Krakowie znajduje się rodzinna firma, Stacja Kontroli Pojazdów Vito. Czynna 6 dni w tygodniu. Wykonujemy przeglądy rejestracyjne, geometrie oraz ozonowanie. Zapraszamy klientów z Krakowa i okolic.</p>
-    <p>Zapewniamy najwyższą jakość sprzętu, oraz dbałośc o komfort Klienta. W poczekalni można zobaczyć jak jest prowadzony przegląd przy darmowej kawie w dobrej i miłej atmosferze. </p>
+    <section>
+        <h2>O Nas</h2>
+        <section id="o-nas">
+            <img src="images/o-nas.webp" alt="Stacja Kontroli Pojazdów Vito Kraków"/>
+        
+            <div>
+                <p>W pobliżu giełdy Rybitwy w Krakowie znajduje się rodzinna firma, Stacja Kontroli Pojazdów Vito. Czynna 6 dni w tygodniu. Wykonujemy przeglądy rejestracyjne, geometrie oraz ozonowanie. Zapraszamy klientów z Krakowa i okolic.</p>
+                <p>Zapewniamy najwyższą jakość sprzętu, oraz dbałośc o komfort Klienta. W poczekalni można zobaczyć jak jest prowadzony przegląd przy darmowej kawie w dobrej i miłej atmosferze. </p>
+            </div>
+        </section>
+        <section id="cennik">
+            <div>
+                <h3>CENNIK PRZEGLĄDÓW</h3>
+                <ul>
+                    <li>MOTOROWER – 76 ZŁ</li>
+                    <li>MOTOCYKL – 94 ZŁ</li>
+                    <li>PRZYCZEPA – 119 ZŁ (DO 3.5T)</li>
+                    <li>SAMOCHÓD OSOBOWY – 149 ZŁ</li>
+                    <li>SAMOCHÓD OSOBOWY Z LPG – 245ZŁ</li>
+                </ul>
+            </div>
+            <img src="images/cennik-przegladow.webp" alt="Cennik Przeglądów Vito Kraków"/>
+        </section>
+        <section id="stacja-kontroli"> 
+            <img src="images/stacja-kontroli.webp" alt="Stacja Kontroli Pojazdów Vito Kraków"/>
+            <div>
+                <h3>Stacja Kontroli Pojazdów Od 2015.</h3>
+                <p>(WKLEIĆ ZDJĘC IE MASZYN TRZEBA WAISIK) Diagnostyka samochodów Kraków. Jakość gwarantuje wyposażenie MAHA. -sprzęt najwyższej klasy. </p>
+            </div>
+            
+        </section>
+    
+        <h3>MECHANKA SAMOCHODOWA POJAZDÓW DO 3.5T, TAKŻE BUSÓW. DIAGNOSTYKA I SPECJALISTYCZNY SERWIS. CZYNNE OD 9-17</h3>
+        <p>Mechanika i elektromechanika, odpowiedni dobór części i profesjonalna obsługa.</p>
+        <ul>
+            <li>serwis hamulcowy</li>
+            <li>wymiana oleju</li>
+            <li>wymiana rozrządu</li>
+            <li>naprawa silników</li>
+            <li>wymiana skrzyni biegów</li>
+            <li>wymiana zawieszenia i elementów nadwozia</li>
+            <li>przeglądy techniczne</li>
+            <li>czyszczenie podwozia oraz konserwacja</li>
+            <li>diagnistyka komputerowa</li>
+        </ul>
 
-    <h2>CENNIK PRZEGLĄDÓW</h2>
-    <ul>
-        <li> MOTOROWER – 76 ZŁ</li>
-        <li>MOTOCYKL – 94 ZŁ</li>
-        <li>PRZYCZEPA – 119 ZŁ (DO 3.5T)</li>
-        <li>SAMOCHÓD OSOBOWY – 149 ZŁ</li>
-        <li>SAMOCHÓD OSOBOWY Z LPG – 245ZŁ</li>
-    </ul>
+        <h3>GEOMETRIA KÓŁ i OSI</h3>
+        <p>( ZDJĘCIE TU WAISIK TRZEBA WKLEIĆ) Najlepsza jakość w Krakowie. ustawiamy zbieżność kół za pomocą lasera (tyłu i przodu)</p>
 
-    <h2>STACJA KONTROLI POJAZDÓW OD 2015.</h2>
-    <p>(WKLEIĆ ZDJĘC IE MASZYN TRZEBA WAISIK) Diagnostyka samochodów Kraków. Jakość gwarantuje wyposażenie MAHA. -sprzęt najwyższej klasy. </p>
- 
-    <h2>MECHANKA SAMOCHODOWA POJAZDÓW DO 3.5T, TAKŻE BUSÓW. DIAGNOSTYKA I SPECJALISTYCZNY SERWIS. CZYNNE OD 9-17</h2>
-    <p>Mechanika i elektromechanika, odpowiedni dobór części i profesjonalna obsługa.</p>
-    <ul>
-        <li>serwis hamulcowy</li>
-        <li>wymiana olej</li>
-        <li>wymiana rozrządu</li>
-        <li>naprawa silników</li>
-        <li>wymiana skrzyni biegów</li>
-        <li>wymiana zawieszenia i elementów nadwozia</li>
-        <li>przeglądy techniczne</li>
-        <li>czyszczenie podwozia oraz konserwacja</li>
-        <li>diagnistyka komputerowa</li>
-    </ul>
+        <h3>KLIMATYZACJA</h3>
+        <ul>
+            <li>szczegółowa kontrola szczelności układu klimatyzacji</li>
+            <li>napełnianie układu odpowiednim czynnikiem chłodniczym</li>
+            <li>naprawę, oraz regeneracje spręzeynek klimatyzacyjnych</li>
+            <li>ODGRZYBIANIE GRATIS</li>
+        </ul>
 
-    <h2>GEOMETRIA KÓŁ i OSI</h2>
-    <p>( ZDJĘCIE TU WAISIK TRZEBA WKLEIĆ) Najlepsza jakość w Krakowie. ustawiamy zbieżność kół za pomocą lasera (tyłu i przodu)</p>
-
-    <h2>KLIMATYZACJA</h2>
-    <ul>
-        <li>szczegółowa kontrola szczelności układu klimatyzacji</li>
-        <li>napełnianie układu odpowiednim czynnikiem chłodniczym</li>
-        <li>naprawę, oraz regeneracje spręzeynek klimatyzacyjnych</li>
-        <li>ODGRZYBIANIE GRATIS</li>
-    </ul>
-
-    <h2>WULKANIZACJA AUT DO 3.5T</h2>
-    <p>CZYNNE OD 9-17</p>
-    <p>( ZDJECIE TU WAISIK )</p>
-    <ul>
-        <li>zmiana opon zwykłych, niskoprofilowych oraz runflat.</li>
-        <li>posiadamy nowe maszyny</li>
-        <li>Naprawiamy przebite opony</li>
-    </ul>
-    <p>SZYBKI DOJAZD W OBRĘBIE KRAKOWA</p>
-            <div id="mapa"class="map-container">
+        <h3>WULKANIZACJA AUT DO 3.5T</h3>
+        <p>CZYNNE OD 9-17</p>
+        <p>( ZDJECIE TU WAISIK )</p>
+        <ul>
+            <li>zmiana opon zwykłych, niskoprofilowych oraz runflat.</li>
+            <li>posiadamy nowe maszyny</li>
+            <li>Naprawiamy przebite opony</li>
+        </ul>
+        <p>SZYBKI DOJAZD W OBRĘBIE KRAKOWA</p>
+        <div id="mapa"class="map-container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.85453085458!2d20.045732900000004!3d50.0444338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471644596560ca87%3A0xb71009efea7ca147!2sVehicle%20Inspection%20Station%20Vito!5e1!3m2!1sen!2spl!4v1764593354782!5m2!1sen!2spl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+    </main>
 </body>
 </html>
