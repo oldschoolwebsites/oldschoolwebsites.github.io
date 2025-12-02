@@ -182,7 +182,7 @@ table {
             float: left;
             margin: 2rem;
         }
-        #o-nas, #cennik, #stacja-kontroli, #mechanika-samochodowa, #gometria-kol, #klimatyzacja, #wulkanizacja {
+        #o-nas, #cennik, #stacja-kontroli, #mechanika-samochodowa, #gometria-kol, #klimatyzacja, #wulkanizacja, #kontakt {
             display: flex;
             justify-content: center; /* aligns the items horizontally */
             align-items: center; /* aligns the items vertically */
@@ -201,11 +201,38 @@ table {
             margin:0;
         }
         @media (max-width: 1103px) {
-            #o-nas, #cennik, #stacja-kontroli, #mechanika-samochodowa, #gometria-kol, #klimatyzacja, #wulkanizacja {
+            #o-nas, #cennik, #stacja-kontroli, #mechanika-samochodowa, #gometria-kol, #klimatyzacja, #wulkanizacja, #kontakt {
                 display:block;
                 div {
                     margin: 0 auto;
                 }
+            }
+        }
+ 
+        #kontakt form {
+            width:100%;
+            input {
+                width: 100%;
+                margin-bottom: 1rem;
+                padding: 0.5rem;
+            }
+            label {
+                line-height: 2rem;
+            }
+            textarea {
+                width: 100%;
+                height: 150px;
+                margin-bottom: 1rem;
+                padding: 0.5rem;
+            }
+            input[type="submit"] {
+                background-color: rgb(0, 131, 144);
+                color: white;
+                font-weight: bold;
+                border: none;
+                cursor: pointer;
+                margin: 0 auto;
+                width: 280px;
             }
         }
         #mapa {
@@ -307,6 +334,35 @@ table {
                     <li>posiadamy nowe maszyny</li>
                     <li>Naprawiamy przebite opony</li>
                 </ul>
+            </div>
+        </section>
+        <h2>KONTAKT</h2>
+        <section id="kontakt">
+            <div>
+                <p>STACJA KONTROLI POJAZDÓW VITO</p>
+                <p>Ul. Szparagowa 2a, 30-739 Kraków</p>
+                <p>WJAZD RÓWNIEŻ OD PÓŁŁANKI.</p>
+                <p>TEL. 122647017</p>
+                <p>CZYNNE OD 8-19
+            </div>
+            <div>
+                <form action="https://formspree.io/regularlighter@yahoo.com" method="POST">
+                    <ul>
+                        <li>
+                            <label for='name'>Twoje Imię</label>
+                            <input type="text" name="name"></li>
+                        <li>
+                            <label for='_replyto'>Twój Email</label>
+                            <input type="email" name="_replyto"></li>
+                        <li>
+                            <label for='phone'>Numer Telefonu</label>
+                            <input type="text" name="phone"></li>
+                        <li>
+                            <label for='message'>Twoja wiadomość</label>
+                            <textarea name="message"></textarea></li>
+                        <li><input type="submit" value="Wyślij formularz pomocy"></li>
+                    </ul>
+                </form>
             </div>
         </section>
         <section id="mapa">
