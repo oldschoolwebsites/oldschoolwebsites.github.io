@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <style>
+        html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: rgb(22, 22, 22)
+        }
+        header {
+            background-image: url(images/krakowmalowanie.jpg);
+            min-width:380px;
+            max-width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+            background-position: 0 150px;
+            background-color: rgb(22, 22, 22);
+
+            corner-shape: bevel;
+            border-bottom-right-radius: 100% 3rem;
+            
+
+            h2,p, a {
+                text-align: center;
+                color:white;
+                display: block;
+                text-transform: uppercase;
+                
+            }
+            section {
+                margin-top: 22vh;
+                @media (max-width: 1103px) {
+                    margin-top: 10vh;
+                }
+                h2 {
+                        margin-top: 15rem;
+                          @media (max-width: 1103px) {
+                            margin-top: 0;
+                }
+                }
+            }
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            font-family: 'Archivo Black', arial, sans-serif;
+            strong {
+                color: white;
+                background-color: red;
+                border-radius: 8px;
+                padding: 8px 15px;
+                /* white-space: nowrap; */
+                line-height: 4rem;
+            }
+        }
+        address {
+            text-align: center;
+            color: gold;
+            font-family: monospace;
+            padding: 2rem 0 1rem 0;
+            background-color: rgb(22, 22, 22);
+            font-size: 24px;
+        }
+        section {
+            text-align:center;
+                
+            h2 {
+                font-weight: bold;
+                font-family: 'Archivo Black', arial, sans-serif;
+                font-size: 48px;
+                -webkit-text-stroke: .7pt rgb(22, 22, 22);
+            }
+            
+            p {
+                padding: 5px 10px;
+                font-weight: bold;
+            
+                width: 360px;
+                margin: 10px auto 10px;
+                /* opacity: 0.7; */
+                background-color: rgb(22, 22, 22);
+            };
+            a {
+                background-color: rgb(144 0 0);
+                width:200px;
+                margin:0 auto;
+                padding:10px 20px;
+                text-decoration: none;
+            }
+ 
+ 
+        }
+
+        h2, h3 {
+            margin: 2rem 0 1rem 0;
+            padding: 0 2rem;
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 42px;
+            font-weight: bold;
+            font-family: 'Archivo Black', arial, sans-serif;
+            margin-bottom: 40px;
+            padding: 0 2rem;
+            text-align: center;
+            color:rgb(0, 131, 144);
+            display:block;
+        }
+        h3 {
+            color:rgb(247, 247, 247);
+            font-size: 24px;
+            text-transform: uppercase;
+            clear: both;
+
+        }
+        p, li {
+                font-family: arial, sans-serif;
+        }
+        p {
+            padding: 1rem 2rem;
+            font-size: 18px;
+            line-height: 1.6;   
+            color:rgb(164, 164, 164);
+            text-align: center;
+        }
+        li {
+            color:rgb(164, 164, 164);
+            padding: 0.5rem 2rem;
+            font-size: 18px;
+        }
+
+        h2 + img {
+           // max-width: 600px;
+            float: left;
+            margin: 2rem;
+        }
+        #dlaczego-warto + h2 {
+            margin-top: 12rem;
+        }
+        #o-nas, #o-nas-2, #o-nas-3, #o-nas-4, #o-nas-5, #dlaczego-warto, #kontakt {
+            display: flex;
+            justify-content: center; /* aligns the items horizontally */
+            align-items: center; /* aligns the items vertically */
+            margin-top: 6rem;
+            gap: 4rem;
+        
+            img {
+                max-width: 600px;
+                
+            }
+            div {
+                max-width: 400px;
+            }
+        }
+        #o-nas {
+            margin:0;
+        }
+        @media (max-width: 1103px) {
+            #o-nas, #o-nas-2, #o-nas-3, #o-nas-4, #o-nas-5, #dlaczego-warto, #kontakt {
+                display:block;
+                div {
+                    margin: 0 auto;
+                }
+            }
+        }
+        #wulkanizacja {
+            margin-bottom: 12rem;
+        }
+        #kontakt {
+            margin-top:0;
+            padding-bottom: 12rem;
+            form {
+                width:100%;
+                input {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    padding: 0.5rem;
+                }
+                label {
+                    line-height: 2rem;
+                }
+                textarea {
+                    width: 100%;
+                    height: 150px;
+                    margin-bottom: 1rem;
+                    padding: 0.5rem;
+                }
+                input[type="submit"] {
+                    background-color: rgb(0, 131, 144);
+                    color: white;
+                    font-weight: bold;
+                    border: none;
+                    cursor: pointer;
+                    margin: 0 auto;
+                    width: 280px;
+                }
+            }
+        }
+        #mapa {
+            margin-top: 6rem;
+        }
+    </style>
+    <title>Malowanie mieszkań i domów – Wieliczka, Huta i Kraków</title>
+</head>
+<body>
+    <header>
+        <address>
+            TEL. 509 903 210
+        </address>
+        <h1>Malowanie mieszkań i domów – <strong>Wieliczka, Huta i Kraków</strong></h1>
+        <section>
+            <h2>Witamy w Kraków Malowanie.</h2>
+            <p>Realizuję prace zarówno w pojedynczych pomieszczeniach, jak i w całych mieszkaniach lub domach. 509 903 210 Szymon.</p>
+            <a href="#kontakt">Umów Wizyte</a>
+        </section>
+    </header>
+    <section>
+        <h2>O Nas</h2>
+        <section id="o-nas">
+            <img src="images/malowanie-domow.jpg" width="100%" alt="Malowanie mieszkań i domów – Wieliczka, Huta i Kraków"/>
+        
+            <div>
+                <h3>Malowanie mieszkań i domów</h3>
+                <p>Zajmuję się malowaniem mieszkań oraz domów prywatnych na terenie Wieliczki, Huty oraz Krakowa i okolic.</p>
+                <p>Wykonuję zlecenia solidnie, czysto i zgodnie z ustalonym terminem. </p>
+                <p>Realizuję prace zarówno w pojedynczych pomieszczeniach, jak i w całych mieszkaniach lub domach.</p>
+                <p>Jestem punktualny, rzetelny i można na mnie liczyć.</p>
+            </div>
+        </section>
+        <section id="o-nas-2">
+            <div>
+                <h3>Zakres usług</h3>
+                <ul>
+                    <li>Malowanie pokoi, salonów i korytarzy</li>
+                    <li>Odświeżanie mieszkań przed wynajmem lub sprzedażą</li>
+                    <li>Przygotowanie powierzchni do malowania</li>
+                    <li>Gruntowanie</li>
+                    <li>Drobne poprawki</li>
+                    <li>Pracuję na sprawdzonych materiałach i dbam o porządek po zakończeniu prac.</li>
+                </ul>
+            </div>
+            <img src="images/malowanie-mieszkan.jpg" width="100%" alt="malowanie mieszkan Kraków, dokładnie, solidnie i z pełnym zaangażowaniem"/>
+        </section>
+        <section id="dlaczego-warto">
+            <img src="images/dlaczego-warto.jpg" width="100%" alt="Malowanie mieszkań i domów – Wieliczka, Huta i Kraków"/>
+            <div>
+                <h3>Dlaczego warto</h3>
+                <ul>
+                    <li>2 lata doświadczenia w malowaniu mieszkań i domów</li>
+                    <li>Rzetelne wykonanie</li>
+                    <li>Terminowość</li>
+                    <li>Czysta i dokładna praca</li>
+                    <li>Indywidualne podejście do każdego  zlecenia</li>
+                    <li>Uczciwa wycena przed rozpoczęciem prac</li>
+                </ul>
+            </div>
+        </section>
+        <h2>KONTAKT</h2>
+        <section id="kontakt">
+            <div>
+                <h3>Profesjonalne Malowanie mieszkań i domów</h3>
+                <p>📍 Obszar działania: Kraków, Wieliczka oraz okolice</p>
+                <p>📞 Jeśli jesteś zainteresowany wyceną lub masz pytania, skontaktuj się ze mną: 509 903 210 Szymon.</p>
+            </div>
+            <div>
+                <form action="https://formspree.io/f/mwpgbjdb" method="POST">
+                    <ul>
+                        <li>
+                            <label for='name'>Twoje Imię</label>
+                            <input type="text" name="name" required></li>
+                        <li>
+                            <label for='_replyto'>Twój Email</label>
+                            <input type="email" name="_replyto" required></li>
+                        <li>
+                            <label for='phone'>Numer Telefonu</label>
+                            <input type="text" name="phone" required></li>
+                        <li>
+                            <label for='message'>Twoja wiadomość</label>
+                            <textarea name="message" required></textarea></li>
+                        <li><input type="submit" value="Wyślij formularz pomocy"></li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
